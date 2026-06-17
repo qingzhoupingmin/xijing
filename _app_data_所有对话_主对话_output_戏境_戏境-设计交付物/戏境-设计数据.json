@@ -1,0 +1,2204 @@
+{
+  "project": "戏境",
+  "version": "1.0",
+  "generated_at": "2026-06-11 15:46:58",
+  "design_tokens": {
+    "style_keywords": [
+      "清爽",
+      "专业",
+      "紫金",
+      "优雅",
+      "舒适"
+    ],
+    "style_concept": "紫金书卷——浅色为底，如翻开的精装书页；紫色为墨，书写故事温度；金色为饰，点缀关键时刻。干净通透，久看不累",
+    "theme": "light",
+    "colors": {
+      "primary": "#7C5CFC",
+      "primary_light": "#9B82FC",
+      "primary_lighter": "#EDE9FE",
+      "primary_dark": "#6344E0",
+      "primary_surface": "#F5F3FF",
+      "secondary": "#C9984A",
+      "secondary_light": "#DDB06E",
+      "secondary_dark": "#A87E38",
+      "secondary_surface": "#FFFBEB",
+      "semantic": {
+        "success": "#10B981",
+        "success_surface": "#ECFDF5",
+        "warning": "#F59E0B",
+        "warning_surface": "#FFFBEB",
+        "error": "#EF4444",
+        "error_surface": "#FEF2F2",
+        "info": "#3B82F6",
+        "info_surface": "#EFF6FF"
+      },
+      "neutral": {
+        "0": "#FFFFFF",
+        "1": "#F9FAFB",
+        "2": "#F3F4F6",
+        "3": "#E5E7EB",
+        "4": "#D1D5DB",
+        "5": "#9CA3AF",
+        "6": "#6B7280",
+        "7": "#374151",
+        "8": "#1F2937",
+        "9": "#111827"
+      },
+      "surface": {
+        "page": "#F9FAFB",
+        "card": "#FFFFFF",
+        "card_hover": "#F9FAFB",
+        "input": "#FFFFFF",
+        "input_focus": "#FFFFFF",
+        "overlay": "rgba(0, 0, 0, 0.4)",
+        "sidebar": "#FFFFFF",
+        "sidebar_active_bg": "#F5F3FF",
+        "topbar": "#FFFFFF"
+      },
+      "gradient": {
+        "primary": "linear-gradient(135deg, #7C5CFC 0%, #9B82FC 100%)",
+        "primary_gold": "linear-gradient(135deg, #7C5CFC 0%, #C9984A 100%)",
+        "gold_shimmer": "linear-gradient(135deg, #C9984A 0%, #DDB06E 50%, #C9984A 100%)",
+        "hero_bg": "linear-gradient(180deg, #F5F3FF 0%, #F9FAFB 100%)",
+        "sidebar_accent": "linear-gradient(180deg, #7C5CFC 0%, #9B82FC 100%)",
+        "card_top_accent": "linear-gradient(90deg, #7C5CFC 0%, #C9984A 100%)"
+      }
+    },
+    "typography": {
+      "font_family": "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif",
+      "font_family_mono": "'SF Mono', 'Fira Code', 'Consolas', monospace",
+      "scale": {
+        "display": 40,
+        "h1": 32,
+        "h2": 24,
+        "h3": 20,
+        "h4": 18,
+        "body": 16,
+        "body_sm": 14,
+        "caption": 12
+      },
+      "line_height": 1.5,
+      "line_height_tight": 1.3,
+      "weights": {
+        "regular": 400,
+        "medium": 500,
+        "semibold": 600,
+        "bold": 700
+      }
+    },
+    "spacing": {
+      "base": 4,
+      "scale": {
+        "xs": 4,
+        "sm": 8,
+        "md": 12,
+        "base": 16,
+        "lg": 24,
+        "xl": 32,
+        "2xl": 48,
+        "3xl": 64
+      }
+    },
+    "border_radius": {
+      "sm": 4,
+      "md": 8,
+      "lg": 12,
+      "xl": 16,
+      "full": "50%"
+    },
+    "shadows": {
+      "none": "none",
+      "xs": "0 1px 2px rgba(0, 0, 0, 0.04)",
+      "sm": "0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04)",
+      "md": "0 4px 6px rgba(0, 0, 0, 0.05), 0 2px 4px rgba(0, 0, 0, 0.04)",
+      "lg": "0 10px 15px rgba(0, 0, 0, 0.06), 0 4px 6px rgba(0, 0, 0, 0.04)",
+      "xl": "0 20px 25px rgba(0, 0, 0, 0.08), 0 8px 10px rgba(0, 0, 0, 0.04)",
+      "primary_glow": "0 4px 14px rgba(124, 92, 252, 0.25)",
+      "gold_glow": "0 4px 14px rgba(201, 152, 74, 0.25)"
+    },
+    "transitions": {
+      "fast": "150ms ease",
+      "normal": "250ms ease",
+      "slow": "350ms ease"
+    },
+    "z_index": {
+      "dropdown": 1000,
+      "sticky": 1020,
+      "overlay": 1030,
+      "modal": 1040,
+      "toast": 1050
+    },
+    "breakpoints": {
+      "sm": 640,
+      "md": 768,
+      "lg": 1024,
+      "xl": 1280,
+      "2xl": 1440
+    }
+  },
+  "pages": [
+    {
+      "page_id": "2349E109F5AD45E99FB00271C2206DC6",
+      "page_name": "p006-登录",
+      "artboard": {
+        "id": "F62D2BB75B2A46AB8A653903F69C8C31",
+        "name": "p006-登录",
+        "width": 1440,
+        "height": 900,
+        "layers": [
+          {
+            "id": "EF99D37BD7524FF18AFA5E22D215B8EA",
+            "name": "页面背景",
+            "class": "shapeGroup",
+            "x": 0,
+            "y": 0,
+            "w": 1440,
+            "h": 900
+          },
+          {
+            "id": "D42E3755C0B0437A89B2DAA4C73C2CCA",
+            "name": "紫色光晕",
+            "class": "shapeGroup",
+            "x": 520,
+            "y": 180,
+            "w": 400,
+            "h": 500
+          },
+          {
+            "id": "BFA8CCDA35024330B06455A540348789",
+            "name": "登录卡片",
+            "class": "shapeGroup",
+            "x": 520,
+            "y": 140,
+            "w": 400,
+            "h": 560
+          },
+          {
+            "id": "6537FAB0873A4EA086DDA747BD3A7A64",
+            "name": "紫金渐变装饰线",
+            "class": "shapeGroup",
+            "x": 520,
+            "y": 140,
+            "w": 400,
+            "h": 2
+          },
+          {
+            "id": "10CA29CF90F9441388C3B8F507089895",
+            "name": "Logo文字",
+            "class": "text",
+            "x": 640,
+            "y": 180,
+            "w": 160,
+            "h": 44
+          },
+          {
+            "id": "C8491D2A4B9949ADB75B9BE7DB6F1F77",
+            "name": "副标题",
+            "class": "text",
+            "x": 596,
+            "y": 232,
+            "w": 248,
+            "h": 18
+          },
+          {
+            "id": "951C42A8EE5745F08AA107AC9F712A1B",
+            "name": "Tab栏背景",
+            "class": "shapeGroup",
+            "x": 552,
+            "y": 270,
+            "w": 336,
+            "h": 40
+          },
+          {
+            "id": "E55E2A23C0BF42A6B912F57E14824C68",
+            "name": "Tab选中下划线",
+            "class": "shapeGroup",
+            "x": 552,
+            "y": 308,
+            "w": 168,
+            "h": 2
+          },
+          {
+            "id": "231B584ACFF1470C82DE3F7FC2F87EBF",
+            "name": "Tab-注册",
+            "class": "text",
+            "x": 576,
+            "y": 278,
+            "w": 56,
+            "h": 20
+          },
+          {
+            "id": "0A6A03D764864931AD489849BCA2209D",
+            "name": "Tab-登录",
+            "class": "text",
+            "x": 720,
+            "y": 278,
+            "w": 56,
+            "h": 20
+          },
+          {
+            "id": "51BDFC828D704EA89E3C8D034EF5E4E8",
+            "name": "输入框-邮箱",
+            "class": "shapeGroup",
+            "x": 552,
+            "y": 296,
+            "w": 336,
+            "h": 36
+          },
+          {
+            "id": "6D9F1C392D494F68B087263C644F6BD5",
+            "name": "占位符-邮箱",
+            "class": "text",
+            "x": 564,
+            "y": 302,
+            "w": 120,
+            "h": 20
+          },
+          {
+            "id": "DC4561883AB64B5E9A271F1C874CB3AE",
+            "name": "输入框-密码",
+            "class": "shapeGroup",
+            "x": 552,
+            "y": 340,
+            "w": 336,
+            "h": 36
+          },
+          {
+            "id": "2219D9E05B9F423E952AFC6B858D3168",
+            "name": "占位符-密码",
+            "class": "text",
+            "x": 564,
+            "y": 346,
+            "w": 120,
+            "h": 20
+          },
+          {
+            "id": "07C6E7611496470E82944E2CF3A4E46A",
+            "name": "输入框-确认密码",
+            "class": "shapeGroup",
+            "x": 552,
+            "y": 384,
+            "w": 336,
+            "h": 36
+          },
+          {
+            "id": "7D9C550A88C0440C83CAC40334843FD5",
+            "name": "占位符-确认密码",
+            "class": "text",
+            "x": 564,
+            "y": 390,
+            "w": 160,
+            "h": 20
+          },
+          {
+            "id": "F8DE83065F3F4899A451A5601B314CCF",
+            "name": "注册按钮",
+            "class": "shapeGroup",
+            "x": 552,
+            "y": 436,
+            "w": 336,
+            "h": 44
+          },
+          {
+            "id": "2CF15B3B85F1488E8181184EA4D4CC50",
+            "name": "按钮文字-注册",
+            "class": "text",
+            "x": 696,
+            "y": 448,
+            "w": 48,
+            "h": 20
+          },
+          {
+            "id": "18CD5CF4EDDC44019E93B2B07A5C8E90",
+            "name": "链接文字",
+            "class": "text",
+            "x": 640,
+            "y": 496,
+            "w": 160,
+            "h": 20
+          }
+        ]
+      }
+    },
+    {
+      "page_id": "8DAA1BC526B04233A54E5B11B1DB2AF8",
+      "page_name": "p001-故事列表",
+      "artboard": {
+        "id": "0901C7D10BF242F4AAAC075801F92934",
+        "name": "p001-故事列表",
+        "width": 1440,
+        "height": 900,
+        "layers": [
+          {
+            "id": "BA3255A035C949D98131EDA1A3BD43F7",
+            "name": "页面背景",
+            "class": "shapeGroup",
+            "x": 0,
+            "y": 0,
+            "w": 1440,
+            "h": 900
+          },
+          {
+            "id": "D0F2CBEF482B4015A9E5F7F8E26DC2AA",
+            "name": "侧栏",
+            "class": "shapeGroup",
+            "x": 0,
+            "y": 0,
+            "w": 220,
+            "h": 900
+          },
+          {
+            "id": "FECE872028C941C8BE3C482EB7FDDC91",
+            "name": "侧栏右边框",
+            "class": "shapeGroup",
+            "x": 219,
+            "y": 0,
+            "w": 1,
+            "h": 900
+          },
+          {
+            "id": "0B99D385418E49DD929A4FF404B06A30",
+            "name": "侧栏Logo",
+            "class": "text",
+            "x": 16,
+            "y": 20,
+            "w": 60,
+            "h": 32
+          },
+          {
+            "id": "1C3715F403E94A5FB6E0234400F0FCB7",
+            "name": "选中背景-我的故事",
+            "class": "shapeGroup",
+            "x": 0,
+            "y": 72,
+            "w": 220,
+            "h": 44
+          },
+          {
+            "id": "AA7C27FAA8644B75BE86F1B72F1C9315",
+            "name": "选中竖条-我的故事",
+            "class": "shapeGroup",
+            "x": 0,
+            "y": 72,
+            "w": 3,
+            "h": 44
+          },
+          {
+            "id": "F1BEEFAA295B4396AE6353A5E5B4A3B9",
+            "name": "导航-我的故事",
+            "class": "text",
+            "x": 16,
+            "y": 84,
+            "w": 80,
+            "h": 20
+          },
+          {
+            "id": "D3ECB1764950428CB745E3434298E2A8",
+            "name": "导航-世界观工坊",
+            "class": "text",
+            "x": 16,
+            "y": 128,
+            "w": 80,
+            "h": 20
+          },
+          {
+            "id": "C531808BA2254182A5221473648B92D4",
+            "name": "导航-章节回看",
+            "class": "text",
+            "x": 16,
+            "y": 172,
+            "w": 80,
+            "h": 20
+          },
+          {
+            "id": "0A5FDDB1D3684FCDB53F8429250AF44F",
+            "name": "顶栏",
+            "class": "shapeGroup",
+            "x": 220,
+            "y": 0,
+            "w": 1220,
+            "h": 56
+          },
+          {
+            "id": "EDAE1B449DFB49C2BD8A5F92EA275211",
+            "name": "顶栏底边框",
+            "class": "shapeGroup",
+            "x": 220,
+            "y": 55,
+            "w": 1220,
+            "h": 1
+          },
+          {
+            "id": "2CD12B8B75544EA0A6CECD1A4C5383F2",
+            "name": "页面标题",
+            "class": "text",
+            "x": 244,
+            "y": 14,
+            "w": 120,
+            "h": 28
+          },
+          {
+            "id": "DED5EADD6E364A7CAB63E335AE3A51E7",
+            "name": "创建故事按钮",
+            "class": "shapeGroup",
+            "x": 1296,
+            "y": 12,
+            "w": 120,
+            "h": 32
+          },
+          {
+            "id": "C6F1E701430C4219B0BC8D8F3DA06E27",
+            "name": "按钮文字",
+            "class": "text",
+            "x": 1316,
+            "y": 18,
+            "w": 80,
+            "h": 20
+          },
+          {
+            "id": "2704B163EC754DDFA3F8DF60030E0E6A",
+            "name": "故事卡片-暗影编年",
+            "class": "shapeGroup",
+            "x": 244,
+            "y": 80,
+            "w": 530,
+            "h": 220
+          },
+          {
+            "id": "18B0A4543DBD43A2860122AD7DC086A8",
+            "name": "卡片装饰线-暗影编年",
+            "class": "shapeGroup",
+            "x": 244,
+            "y": 80,
+            "w": 530,
+            "h": 2
+          },
+          {
+            "id": "E4EAF46C188440A4AD615E01123B7636",
+            "name": "故事标题-暗影编年",
+            "class": "text",
+            "x": 264,
+            "y": 100,
+            "w": 200,
+            "h": 28
+          },
+          {
+            "id": "696F397D6B834C63A9AB9D46C940737D",
+            "name": "故事类型-暗影编年",
+            "class": "text",
+            "x": 264,
+            "y": 132,
+            "w": 60,
+            "h": 18
+          },
+          {
+            "id": "D0007871A6D844E49CF5DB620CB2663B",
+            "name": "状态标签-暗影编年",
+            "class": "shapeGroup",
+            "x": 664,
+            "y": 100,
+            "w": 80,
+            "h": 24
+          },
+          {
+            "id": "C836CD999A334626B6CDCB7FB9E0020C",
+            "name": "状态文字-暗影编年",
+            "class": "text",
+            "x": 672,
+            "y": 104,
+            "w": 64,
+            "h": 16
+          },
+          {
+            "id": "C55A9AF7C25D486A87EAD090D15B72E1",
+            "name": "章节进度-暗影编年",
+            "class": "text",
+            "x": 264,
+            "y": 160,
+            "w": 100,
+            "h": 18
+          },
+          {
+            "id": "94F8DDA792AE4716A886443408D017E7",
+            "name": "模型-暗影编年",
+            "class": "text",
+            "x": 264,
+            "y": 184,
+            "w": 100,
+            "h": 18
+          },
+          {
+            "id": "6637E226E261410689681EBAEAF406A2",
+            "name": "故事卡片-星河序曲",
+            "class": "shapeGroup",
+            "x": 790,
+            "y": 336,
+            "w": 530,
+            "h": 220
+          },
+          {
+            "id": "3E083B05D00A487B84C339DFD4266746",
+            "name": "卡片装饰线-星河序曲",
+            "class": "shapeGroup",
+            "x": 790,
+            "y": 336,
+            "w": 530,
+            "h": 2
+          },
+          {
+            "id": "7A3B37BA9D4B442C90E368E5001DCB2B",
+            "name": "故事标题-星河序曲",
+            "class": "text",
+            "x": 810,
+            "y": 356,
+            "w": 200,
+            "h": 28
+          },
+          {
+            "id": "F7101014ECD84DDAA28D7A516CC539A4",
+            "name": "故事类型-星河序曲",
+            "class": "text",
+            "x": 810,
+            "y": 388,
+            "w": 60,
+            "h": 18
+          },
+          {
+            "id": "321CFAEB73C1452D80F1610218E16CD9",
+            "name": "状态标签-星河序曲",
+            "class": "shapeGroup",
+            "x": 1210,
+            "y": 356,
+            "w": 80,
+            "h": 24
+          },
+          {
+            "id": "0FEAADD91BCE49DF81E0FB45672DE27A",
+            "name": "状态文字-星河序曲",
+            "class": "text",
+            "x": 1218,
+            "y": 360,
+            "w": 64,
+            "h": 16
+          },
+          {
+            "id": "D434B6E860B44DCA96F00DB6CE35BF78",
+            "name": "章节进度-星河序曲",
+            "class": "text",
+            "x": 810,
+            "y": 416,
+            "w": 100,
+            "h": 18
+          },
+          {
+            "id": "153970903C8F4B2B85E628CBDCD8A36D",
+            "name": "模型-星河序曲",
+            "class": "text",
+            "x": 810,
+            "y": 440,
+            "w": 100,
+            "h": 18
+          },
+          {
+            "id": "6C7827AB2AE644ED81B42A46C90F2D82",
+            "name": "故事卡片-长安幻梦",
+            "class": "shapeGroup",
+            "x": 244,
+            "y": 592,
+            "w": 530,
+            "h": 220
+          },
+          {
+            "id": "B410B3C556264FB98C22F07E2BC9EE54",
+            "name": "卡片装饰线-长安幻梦",
+            "class": "shapeGroup",
+            "x": 244,
+            "y": 592,
+            "w": 530,
+            "h": 2
+          },
+          {
+            "id": "64E4B9EF74E8445489E8E0A996C67C5C",
+            "name": "故事标题-长安幻梦",
+            "class": "text",
+            "x": 264,
+            "y": 612,
+            "w": 200,
+            "h": 28
+          },
+          {
+            "id": "6AE9498844534970B5E13A128C5C2857",
+            "name": "故事类型-长安幻梦",
+            "class": "text",
+            "x": 264,
+            "y": 644,
+            "w": 60,
+            "h": 18
+          },
+          {
+            "id": "9271BD31D9F24D358E99292CEA800543",
+            "name": "状态标签-长安幻梦",
+            "class": "shapeGroup",
+            "x": 664,
+            "y": 612,
+            "w": 80,
+            "h": 24
+          },
+          {
+            "id": "4749DD3DE44C49639B519740018054A0",
+            "name": "状态文字-长安幻梦",
+            "class": "text",
+            "x": 672,
+            "y": 616,
+            "w": 64,
+            "h": 16
+          },
+          {
+            "id": "2A3FDD42E6374A83A5E83CB6336AB85A",
+            "name": "章节进度-长安幻梦",
+            "class": "text",
+            "x": 264,
+            "y": 672,
+            "w": 100,
+            "h": 18
+          },
+          {
+            "id": "4ABA166BE9BB42378C315B3431E3DD44",
+            "name": "模型-长安幻梦",
+            "class": "text",
+            "x": 264,
+            "y": 696,
+            "w": 100,
+            "h": 18
+          }
+        ]
+      }
+    },
+    {
+      "page_id": "B2710FEB7212451AA5B5ABC261B0796F",
+      "page_name": "p002-API配置",
+      "artboard": {
+        "id": "BAA6D061837A499BB5BC4883AAA97501",
+        "name": "p002-API配置",
+        "width": 1440,
+        "height": 900,
+        "layers": [
+          {
+            "id": "5A568F52CE1E4C37AF4D33F08126A4BC",
+            "name": "页面背景",
+            "class": "shapeGroup",
+            "x": 0,
+            "y": 0,
+            "w": 1440,
+            "h": 900
+          },
+          {
+            "id": "FC48B880C77A4E5EBC67F9507B1EC3F7",
+            "name": "侧栏",
+            "class": "shapeGroup",
+            "x": 0,
+            "y": 0,
+            "w": 220,
+            "h": 900
+          },
+          {
+            "id": "99CC8CE572754E64B277618B45F4389A",
+            "name": "侧栏右边框",
+            "class": "shapeGroup",
+            "x": 219,
+            "y": 0,
+            "w": 1,
+            "h": 900
+          },
+          {
+            "id": "0A53673D53B34F2B9722DF894C48B732",
+            "name": "侧栏Logo",
+            "class": "text",
+            "x": 16,
+            "y": 20,
+            "w": 60,
+            "h": 32
+          },
+          {
+            "id": "F8D20D83507D4D878DF5AA460613485E",
+            "name": "导航-我的故事",
+            "class": "text",
+            "x": 16,
+            "y": 84,
+            "w": 80,
+            "h": 20
+          },
+          {
+            "id": "E00E05126C8B43BB97A2910248EA893D",
+            "name": "选中背景-API配置",
+            "class": "shapeGroup",
+            "x": 0,
+            "y": 116,
+            "w": 220,
+            "h": 44
+          },
+          {
+            "id": "60302894F190444EB9F5133F04102588",
+            "name": "选中竖条-API配置",
+            "class": "shapeGroup",
+            "x": 0,
+            "y": 116,
+            "w": 3,
+            "h": 44
+          },
+          {
+            "id": "17F0643ECEF94336BDD11273A330DDD0",
+            "name": "导航-API配置",
+            "class": "text",
+            "x": 16,
+            "y": 128,
+            "w": 80,
+            "h": 20
+          },
+          {
+            "id": "B7995E3458874AF5BAC945081335A4B8",
+            "name": "导航-个人中心",
+            "class": "text",
+            "x": 16,
+            "y": 172,
+            "w": 80,
+            "h": 20
+          },
+          {
+            "id": "6673566D8D6941108EF2979B70C7CFA5",
+            "name": "顶栏",
+            "class": "shapeGroup",
+            "x": 220,
+            "y": 0,
+            "w": 1220,
+            "h": 56
+          },
+          {
+            "id": "B190A66887D84DA1A3A8AB18AD27647A",
+            "name": "顶栏底边框",
+            "class": "shapeGroup",
+            "x": 220,
+            "y": 55,
+            "w": 1220,
+            "h": 1
+          },
+          {
+            "id": "E2BD6BF59B964098A50DB864DA3020C2",
+            "name": "页面标题",
+            "class": "text",
+            "x": 244,
+            "y": 14,
+            "w": 120,
+            "h": 28
+          },
+          {
+            "id": "7E8933DE6F984100ABE77293827151CA",
+            "name": "添加配置按钮",
+            "class": "shapeGroup",
+            "x": 1296,
+            "y": 12,
+            "w": 120,
+            "h": 32
+          },
+          {
+            "id": "3CFAAC9B709949BB8CE7C4E2B7B721DF",
+            "name": "按钮文字",
+            "class": "text",
+            "x": 1316,
+            "y": 18,
+            "w": 80,
+            "h": 20
+          },
+          {
+            "id": "5ABF000DD2344D75814F0F81F0EC112E",
+            "name": "配置卡片-DeepSeek",
+            "class": "shapeGroup",
+            "x": 244,
+            "y": 80,
+            "w": 1172,
+            "h": 170
+          },
+          {
+            "id": "1957B430FD8448FF82876EAAEA482A27",
+            "name": "卡片顶装饰-DeepSeek",
+            "class": "shapeGroup",
+            "x": 244,
+            "y": 80,
+            "w": 1172,
+            "h": 2
+          },
+          {
+            "id": "E90F531179B344F598294082BA1797D5",
+            "name": "厂商名-DeepSeek",
+            "class": "text",
+            "x": 264,
+            "y": 96,
+            "w": 120,
+            "h": 24
+          },
+          {
+            "id": "A9FB6680AE034EFDA8583DFB02C96F06",
+            "name": "状态点-DeepSeek",
+            "class": "shapeGroup",
+            "x": 264,
+            "y": 130,
+            "w": 8,
+            "h": 8
+          },
+          {
+            "id": "4DB7F2970A03469F88BD818B5C2E9A80",
+            "name": "状态文字-DeepSeek",
+            "class": "text",
+            "x": 280,
+            "y": 124,
+            "w": 60,
+            "h": 18
+          },
+          {
+            "id": "5759592B323C4D189B63E92F75EFCA70",
+            "name": "模型ID-DeepSeek",
+            "class": "text",
+            "x": 264,
+            "y": 160,
+            "w": 200,
+            "h": 18
+          },
+          {
+            "id": "F960726237E1481784031D714DCA0C4F",
+            "name": "开关-DeepSeek",
+            "class": "shapeGroup",
+            "x": 1344,
+            "y": 100,
+            "w": 44,
+            "h": 24
+          },
+          {
+            "id": "9129CD45414D465B8D9CC7BD248F00F4",
+            "name": "配置卡片-通义千问",
+            "class": "shapeGroup",
+            "x": 244,
+            "y": 276,
+            "w": 1172,
+            "h": 170
+          },
+          {
+            "id": "636B97CB095B4C20A380CF522BDAECDD",
+            "name": "卡片顶装饰-通义千问",
+            "class": "shapeGroup",
+            "x": 244,
+            "y": 276,
+            "w": 1172,
+            "h": 2
+          },
+          {
+            "id": "F550E2B2B4904AE5907E579720721B5D",
+            "name": "厂商名-通义千问",
+            "class": "text",
+            "x": 264,
+            "y": 292,
+            "w": 120,
+            "h": 24
+          },
+          {
+            "id": "C409AA638BFD4657985BE4C574CAF7C6",
+            "name": "状态点-通义千问",
+            "class": "shapeGroup",
+            "x": 264,
+            "y": 326,
+            "w": 8,
+            "h": 8
+          },
+          {
+            "id": "45CAD1F5801D4E349FD3A8EF6B41DD6B",
+            "name": "状态文字-通义千问",
+            "class": "text",
+            "x": 280,
+            "y": 320,
+            "w": 60,
+            "h": 18
+          },
+          {
+            "id": "2387DE0B08DC45B9839BBC4FBC0E3594",
+            "name": "模型ID-通义千问",
+            "class": "text",
+            "x": 264,
+            "y": 356,
+            "w": 200,
+            "h": 18
+          },
+          {
+            "id": "5F95A829C7D14680B34F0946C2187692",
+            "name": "开关-通义千问",
+            "class": "shapeGroup",
+            "x": 1344,
+            "y": 296,
+            "w": 44,
+            "h": 24
+          },
+          {
+            "id": "CCE5A66A655A4269A6C381ECE025A369",
+            "name": "配置卡片-文心一言",
+            "class": "shapeGroup",
+            "x": 244,
+            "y": 472,
+            "w": 1172,
+            "h": 170
+          },
+          {
+            "id": "104B3C75CB3246D1A9C2FDC122A24D01",
+            "name": "卡片顶装饰-文心一言",
+            "class": "shapeGroup",
+            "x": 244,
+            "y": 472,
+            "w": 1172,
+            "h": 2
+          },
+          {
+            "id": "4BA40E15091E43C1AEF2FD7735F2FF91",
+            "name": "厂商名-文心一言",
+            "class": "text",
+            "x": 264,
+            "y": 488,
+            "w": 120,
+            "h": 24
+          },
+          {
+            "id": "E552BE85F5DD4C0F893510957D6E1AA4",
+            "name": "状态点-文心一言",
+            "class": "shapeGroup",
+            "x": 264,
+            "y": 522,
+            "w": 8,
+            "h": 8
+          },
+          {
+            "id": "EFDE5DC5E42045CA9668A603E82FB941",
+            "name": "状态文字-文心一言",
+            "class": "text",
+            "x": 280,
+            "y": 516,
+            "w": 60,
+            "h": 18
+          },
+          {
+            "id": "058C78E5D96C4C5DB67ECFC950DA9E25",
+            "name": "模型ID-文心一言",
+            "class": "text",
+            "x": 264,
+            "y": 552,
+            "w": 200,
+            "h": 18
+          },
+          {
+            "id": "CC743CEA85364EB4A84D0EDE69F70622",
+            "name": "开关-文心一言",
+            "class": "shapeGroup",
+            "x": 1344,
+            "y": 492,
+            "w": 44,
+            "h": 24
+          },
+          {
+            "id": "580734997851446C84672EC282D0166A",
+            "name": "添加新配置区域",
+            "class": "shapeGroup",
+            "x": 244,
+            "y": 668,
+            "w": 1172,
+            "h": 60
+          },
+          {
+            "id": "DAC1DC26D6614827A30B0B75E2B6860B",
+            "name": "添加提示文字",
+            "class": "text",
+            "x": 740,
+            "y": 688,
+            "w": 120,
+            "h": 20
+          }
+        ]
+      }
+    },
+    {
+      "page_id": "A69E3CD1397548BC8009C880828FACEB",
+      "page_name": "p003-个人中心",
+      "artboard": {
+        "id": "C036C25BD8C841A097989BA720D1BA02",
+        "name": "p003-个人中心",
+        "width": 1440,
+        "height": 900,
+        "layers": [
+          {
+            "id": "24A8E71AC03347058565BF15D3F8D591",
+            "name": "页面背景",
+            "class": "shapeGroup",
+            "x": 0,
+            "y": 0,
+            "w": 1440,
+            "h": 900
+          },
+          {
+            "id": "2A85CDCDA623434D87CFD66DF03C93C5",
+            "name": "侧栏",
+            "class": "shapeGroup",
+            "x": 0,
+            "y": 0,
+            "w": 220,
+            "h": 900
+          },
+          {
+            "id": "59956ACCBAAD4EB08D9A156DF46FDC9C",
+            "name": "侧栏右边框",
+            "class": "shapeGroup",
+            "x": 219,
+            "y": 0,
+            "w": 1,
+            "h": 900
+          },
+          {
+            "id": "2720C7D75DFD42CD8AA65001D5AEEFBE",
+            "name": "侧栏Logo",
+            "class": "text",
+            "x": 16,
+            "y": 20,
+            "w": 60,
+            "h": 32
+          },
+          {
+            "id": "210EAE926E4B410A8E20F34CB6D3FF6B",
+            "name": "导航-我的故事",
+            "class": "text",
+            "x": 16,
+            "y": 84,
+            "w": 80,
+            "h": 20
+          },
+          {
+            "id": "594F81803A1F43058E7ABDF8ABDF7382",
+            "name": "导航-API配置",
+            "class": "text",
+            "x": 16,
+            "y": 128,
+            "w": 80,
+            "h": 20
+          },
+          {
+            "id": "F1CF2FECD5E34859BA0A683687D4BE7E",
+            "name": "选中背景-个人中心",
+            "class": "shapeGroup",
+            "x": 0,
+            "y": 160,
+            "w": 220,
+            "h": 44
+          },
+          {
+            "id": "125857281CEE4F92B179D6BF8F248726",
+            "name": "选中竖条-个人中心",
+            "class": "shapeGroup",
+            "x": 0,
+            "y": 160,
+            "w": 3,
+            "h": 44
+          },
+          {
+            "id": "63F9DD05EF4642C8B221EED8C2B9E21E",
+            "name": "导航-个人中心",
+            "class": "text",
+            "x": 16,
+            "y": 172,
+            "w": 80,
+            "h": 20
+          },
+          {
+            "id": "D518824390BE4301A5AA347E410A9800",
+            "name": "顶栏",
+            "class": "shapeGroup",
+            "x": 220,
+            "y": 0,
+            "w": 1220,
+            "h": 56
+          },
+          {
+            "id": "99F44DC8679D4EFBA65FBFE20749BEDD",
+            "name": "顶栏底边框",
+            "class": "shapeGroup",
+            "x": 220,
+            "y": 55,
+            "w": 1220,
+            "h": 1
+          },
+          {
+            "id": "9EED74F6178548318C716D2925AF5417",
+            "name": "页面标题",
+            "class": "text",
+            "x": 244,
+            "y": 14,
+            "w": 120,
+            "h": 28
+          },
+          {
+            "id": "21492DF337554267A6B3D5DDF5F43237",
+            "name": "表单卡片",
+            "class": "shapeGroup",
+            "x": 244,
+            "y": 80,
+            "w": 1172,
+            "h": 780
+          },
+          {
+            "id": "8B126AAD9BB741C8A6BAF3D66A293EEE",
+            "name": "分组标题-基本信息",
+            "class": "text",
+            "x": 268,
+            "y": 100,
+            "w": 120,
+            "h": 24
+          },
+          {
+            "id": "CE9B8C5CDF344CAE80F53F9D8C8A3AC1",
+            "name": "标签-昵称",
+            "class": "text",
+            "x": 268,
+            "y": 140,
+            "w": 80,
+            "h": 18
+          },
+          {
+            "id": "D53A62E586864A6AA26AB8E10D921B08",
+            "name": "值-昵称",
+            "class": "text",
+            "x": 364,
+            "y": 140,
+            "w": 200,
+            "h": 18
+          },
+          {
+            "id": "630553FA18C3431D8CFA8A79469D75C7",
+            "name": "标签-邮箱",
+            "class": "text",
+            "x": 268,
+            "y": 196,
+            "w": 80,
+            "h": 18
+          },
+          {
+            "id": "DA88D0DB5EE946EDB7E2C460DAB79FCE",
+            "name": "值-邮箱",
+            "class": "text",
+            "x": 364,
+            "y": 196,
+            "w": 200,
+            "h": 18
+          },
+          {
+            "id": "A8C3A173D9844BDC9A57F5E60721C3AA",
+            "name": "标签-手机号",
+            "class": "text",
+            "x": 268,
+            "y": 252,
+            "w": 80,
+            "h": 18
+          },
+          {
+            "id": "30A8038DD4644AF18D0BE2DE72374A3D",
+            "name": "值-手机号",
+            "class": "text",
+            "x": 364,
+            "y": 252,
+            "w": 200,
+            "h": 18
+          },
+          {
+            "id": "E7697550FCFC407B83911A0511A20E28",
+            "name": "分割线",
+            "class": "shapeGroup",
+            "x": 268,
+            "y": 320,
+            "w": 1124,
+            "h": 1
+          },
+          {
+            "id": "5C147861271E408EAC8E5170280FE7DB",
+            "name": "分组标题-账号安全",
+            "class": "text",
+            "x": 268,
+            "y": 344,
+            "w": 120,
+            "h": 24
+          },
+          {
+            "id": "01512A60A39B48739BB5D48EE4FA43AE",
+            "name": "标签-登录密码",
+            "class": "text",
+            "x": 268,
+            "y": 384,
+            "w": 80,
+            "h": 18
+          },
+          {
+            "id": "05EDBCDF5CCE4573A5FCBEA432E2D3D4",
+            "name": "值-登录密码",
+            "class": "text",
+            "x": 364,
+            "y": 384,
+            "w": 200,
+            "h": 18
+          },
+          {
+            "id": "72BB08EB3C7B4FE2A43981D9877CE0DB",
+            "name": "标签-绑定邮箱",
+            "class": "text",
+            "x": 268,
+            "y": 440,
+            "w": 80,
+            "h": 18
+          },
+          {
+            "id": "FB049F2616EF4BCDBE98E7C080DBA057",
+            "name": "值-绑定邮箱",
+            "class": "text",
+            "x": 364,
+            "y": 440,
+            "w": 200,
+            "h": 18
+          },
+          {
+            "id": "64A3F5B2E0764FB48EB1F14611D57143",
+            "name": "编辑按钮",
+            "class": "shapeGroup",
+            "x": 268,
+            "y": 520,
+            "w": 80,
+            "h": 36
+          },
+          {
+            "id": "F769E2703B764FFEBD7FC6D37BFAC14E",
+            "name": "按钮文字",
+            "class": "text",
+            "x": 280,
+            "y": 528,
+            "w": 56,
+            "h": 20
+          }
+        ]
+      }
+    },
+    {
+      "page_id": "E6F16FA94C17434384ECC019112240FF",
+      "page_name": "p005-创建故事",
+      "artboard": {
+        "id": "05C0A980268F4D8084D1DBE070FF0471",
+        "name": "p005-创建故事",
+        "width": 1440,
+        "height": 900,
+        "layers": [
+          {
+            "id": "18F6C030CADE42E3B06D01C3016F1F05",
+            "name": "页面背景",
+            "class": "shapeGroup",
+            "x": 0,
+            "y": 0,
+            "w": 1440,
+            "h": 900
+          },
+          {
+            "id": "32E68C51AA074B7589C97407B9FD3918",
+            "name": "侧栏",
+            "class": "shapeGroup",
+            "x": 0,
+            "y": 0,
+            "w": 220,
+            "h": 900
+          },
+          {
+            "id": "869C76F8E64547B8963E1EE67BB587B1",
+            "name": "侧栏右边框",
+            "class": "shapeGroup",
+            "x": 219,
+            "y": 0,
+            "w": 1,
+            "h": 900
+          },
+          {
+            "id": "182903BDBA274FD69B154882C40E9660",
+            "name": "侧栏Logo",
+            "class": "text",
+            "x": 16,
+            "y": 20,
+            "w": 60,
+            "h": 32
+          },
+          {
+            "id": "A5F8A6A22C464224B4BB4D6CC42DE06A",
+            "name": "导航-我的故事",
+            "class": "text",
+            "x": 16,
+            "y": 84,
+            "w": 80,
+            "h": 20
+          },
+          {
+            "id": "2FD72F48A6E4401F9063833161E481BD",
+            "name": "选中背景-世界观工坊",
+            "class": "shapeGroup",
+            "x": 0,
+            "y": 116,
+            "w": 220,
+            "h": 44
+          },
+          {
+            "id": "E01DC7393ECA47BDA19545F74D396B0B",
+            "name": "选中竖条-世界观工坊",
+            "class": "shapeGroup",
+            "x": 0,
+            "y": 116,
+            "w": 3,
+            "h": 44
+          },
+          {
+            "id": "DD7D8288E0694C1185332E27ED428258",
+            "name": "导航-世界观工坊",
+            "class": "text",
+            "x": 16,
+            "y": 128,
+            "w": 80,
+            "h": 20
+          },
+          {
+            "id": "FBAAC91B70B1406DBC714C3048380605",
+            "name": "导航-章节回看",
+            "class": "text",
+            "x": 16,
+            "y": 172,
+            "w": 80,
+            "h": 20
+          },
+          {
+            "id": "FE37279D35E54066911100C37FB0E7BD",
+            "name": "顶栏",
+            "class": "shapeGroup",
+            "x": 220,
+            "y": 0,
+            "w": 1220,
+            "h": 56
+          },
+          {
+            "id": "DE374680FF434A7DA13B4E26C751069E",
+            "name": "顶栏底边框",
+            "class": "shapeGroup",
+            "x": 220,
+            "y": 55,
+            "w": 1220,
+            "h": 1
+          },
+          {
+            "id": "458040DE6D604A8EA6600FC72F4DB882",
+            "name": "面包屑",
+            "class": "text",
+            "x": 244,
+            "y": 14,
+            "w": 200,
+            "h": 28
+          },
+          {
+            "id": "7B07CD51F03A4F0CAF6E193DEDFFDA33",
+            "name": "步骤圆-基础信息",
+            "class": "shapeGroup",
+            "x": 300,
+            "y": 76,
+            "w": 28,
+            "h": 28
+          },
+          {
+            "id": "8FB1899A993341249B258F9882595E32",
+            "name": "步骤数字-基础信息",
+            "class": "text",
+            "x": 308,
+            "y": 82,
+            "w": 14,
+            "h": 16
+          },
+          {
+            "id": "0657609AF5F94893B5E88B215F8B72EA",
+            "name": "步骤文字-基础信息",
+            "class": "text",
+            "x": 284,
+            "y": 108,
+            "w": 60,
+            "h": 18
+          },
+          {
+            "id": "459EB11CED0D4720B9BB3088265FAF62",
+            "name": "步骤圆-大纲编辑",
+            "class": "shapeGroup",
+            "x": 480,
+            "y": 76,
+            "w": 28,
+            "h": 28
+          },
+          {
+            "id": "ADC1273C631E40199ABE4F1D1184CC28",
+            "name": "步骤数字-大纲编辑",
+            "class": "text",
+            "x": 488,
+            "y": 82,
+            "w": 14,
+            "h": 16
+          },
+          {
+            "id": "E3F641E6E9D24E39BF5A7BD063E3990B",
+            "name": "步骤文字-大纲编辑",
+            "class": "text",
+            "x": 464,
+            "y": 108,
+            "w": 60,
+            "h": 18
+          },
+          {
+            "id": "7E31E103ECF64971ABBA0507E670A234",
+            "name": "步骤圆-世界设定",
+            "class": "shapeGroup",
+            "x": 660,
+            "y": 76,
+            "w": 28,
+            "h": 28
+          },
+          {
+            "id": "1AAE1774138A4E57A0B5D002C0683C31",
+            "name": "步骤数字-世界设定",
+            "class": "text",
+            "x": 668,
+            "y": 82,
+            "w": 14,
+            "h": 16
+          },
+          {
+            "id": "20B16A61EE7A4B44BF1F651F116EA03D",
+            "name": "步骤文字-世界设定",
+            "class": "text",
+            "x": 644,
+            "y": 108,
+            "w": 60,
+            "h": 18
+          },
+          {
+            "id": "C0E292E961CB40F7ACB0F2B858DCCFC6",
+            "name": "步骤圆-角色设定",
+            "class": "shapeGroup",
+            "x": 840,
+            "y": 76,
+            "w": 28,
+            "h": 28
+          },
+          {
+            "id": "DB634FE0AF5B494ABB7EA901B1A3192F",
+            "name": "步骤数字-角色设定",
+            "class": "text",
+            "x": 848,
+            "y": 82,
+            "w": 14,
+            "h": 16
+          },
+          {
+            "id": "549E8644B6B74EF1827C2E5B170F4014",
+            "name": "步骤文字-角色设定",
+            "class": "text",
+            "x": 824,
+            "y": 108,
+            "w": 60,
+            "h": 18
+          },
+          {
+            "id": "03A97342AD104D498241836AB272D166",
+            "name": "表单卡片",
+            "class": "shapeGroup",
+            "x": 244,
+            "y": 140,
+            "w": 1172,
+            "h": 680
+          },
+          {
+            "id": "987900A8747149F6AA33DB8075F55372",
+            "name": "卡片标题-基础信息",
+            "class": "text",
+            "x": 268,
+            "y": 160,
+            "w": 120,
+            "h": 24
+          },
+          {
+            "id": "6A463825BD0A4A559857D300642E8E51",
+            "name": "表单标签-故事标题 *",
+            "class": "text",
+            "x": 268,
+            "y": 204,
+            "w": 120,
+            "h": 18
+          },
+          {
+            "id": "5810F449911E4D6081CDC4111D9F5490",
+            "name": "输入框-故事标题 *",
+            "class": "shapeGroup",
+            "x": 268,
+            "y": 228,
+            "w": 560,
+            "h": 36
+          },
+          {
+            "id": "9A7060997EB6497C982F4309051FD836",
+            "name": "占位符-故事标题 *",
+            "class": "text",
+            "x": 280,
+            "y": 236,
+            "w": 200,
+            "h": 18
+          },
+          {
+            "id": "5072C05FD68D43D0AFAF700869A98DAC",
+            "name": "表单标签-故事主题",
+            "class": "text",
+            "x": 268,
+            "y": 276,
+            "w": 120,
+            "h": 18
+          },
+          {
+            "id": "80B44953C35D4F06ADBA61AF02FD2308",
+            "name": "输入框-故事主题",
+            "class": "shapeGroup",
+            "x": 268,
+            "y": 300,
+            "w": 560,
+            "h": 36
+          },
+          {
+            "id": "7C44C2C9F9064E75B7EF9D2B9874D535",
+            "name": "占位符-故事主题",
+            "class": "text",
+            "x": 280,
+            "y": 308,
+            "w": 200,
+            "h": 18
+          },
+          {
+            "id": "79B1625A4FCC496497A2846F302F8B26",
+            "name": "表单标签-故事前提",
+            "class": "text",
+            "x": 268,
+            "y": 348,
+            "w": 120,
+            "h": 18
+          },
+          {
+            "id": "9D9A4FBB8638496E94473D5BAFB277FD",
+            "name": "输入框-故事前提",
+            "class": "shapeGroup",
+            "x": 268,
+            "y": 372,
+            "w": 560,
+            "h": 72
+          },
+          {
+            "id": "4911575B78D14416936852E0DE7346F5",
+            "name": "占位符-故事前提",
+            "class": "text",
+            "x": 280,
+            "y": 380,
+            "w": 200,
+            "h": 18
+          },
+          {
+            "id": "D4C7D5FFA1EB43B6A960AACC13E69475",
+            "name": "取消按钮",
+            "class": "shapeGroup",
+            "x": 1164,
+            "y": 760,
+            "w": 100,
+            "h": 36
+          },
+          {
+            "id": "3FB12A811024438FB1A8F3B72D723712",
+            "name": "取消按钮文字",
+            "class": "text",
+            "x": 1192,
+            "y": 768,
+            "w": 56,
+            "h": 20
+          },
+          {
+            "id": "26B4CFBC90334AD8AF312506CB604657",
+            "name": "下一步按钮",
+            "class": "shapeGroup",
+            "x": 1284,
+            "y": 760,
+            "w": 100,
+            "h": 36
+          },
+          {
+            "id": "F55BAF11A2F44B0990C6CE1080201363",
+            "name": "下一步按钮文字",
+            "class": "text",
+            "x": 1300,
+            "y": 768,
+            "w": 72,
+            "h": 20
+          }
+        ]
+      }
+    },
+    {
+      "page_id": "9553E9DA3898474DAAF000AF95CB26C4",
+      "page_name": "p004-故事演绎",
+      "artboard": {
+        "id": "B970250B02A34F8C8E2BA2FCAC8FDC42",
+        "name": "p004-故事演绎",
+        "width": 1440,
+        "height": 900,
+        "layers": [
+          {
+            "id": "565254C80DB443ADA55EDFC602AC5876",
+            "name": "页面背景",
+            "class": "shapeGroup",
+            "x": 0,
+            "y": 0,
+            "w": 1440,
+            "h": 900
+          },
+          {
+            "id": "FBE40945BB8B434180ABB5C0A1CD6151",
+            "name": "折叠侧栏",
+            "class": "shapeGroup",
+            "x": 0,
+            "y": 0,
+            "w": 64,
+            "h": 900
+          },
+          {
+            "id": "E8F9D6542B2E40D990DD10234B286383",
+            "name": "侧栏右边框",
+            "class": "shapeGroup",
+            "x": 63,
+            "y": 0,
+            "w": 1,
+            "h": 900
+          },
+          {
+            "id": "4AB89AF40265410598C13C1AB21C2CAA",
+            "name": "图标背景-0",
+            "class": "shapeGroup",
+            "x": 8,
+            "y": 80,
+            "w": 48,
+            "h": 48
+          },
+          {
+            "id": "B4F96597F2FF4303ADA784DFDC545256",
+            "name": "侧栏图标-0",
+            "class": "text",
+            "x": 20,
+            "y": 92,
+            "w": 24,
+            "h": 24
+          },
+          {
+            "id": "3D2FC870131245698682C334C64B7272",
+            "name": "侧栏图标-1",
+            "class": "text",
+            "x": 20,
+            "y": 140,
+            "w": 24,
+            "h": 24
+          },
+          {
+            "id": "C948FB2577EB4073BF22EC68481DEC48",
+            "name": "侧栏图标-2",
+            "class": "text",
+            "x": 20,
+            "y": 188,
+            "w": 24,
+            "h": 24
+          },
+          {
+            "id": "506D56B47A4B4CF2A9D8E2C49256329B",
+            "name": "顶栏",
+            "class": "shapeGroup",
+            "x": 64,
+            "y": 0,
+            "w": 1376,
+            "h": 56
+          },
+          {
+            "id": "5F16F3628EF54EA8A09D8950D7FFE940",
+            "name": "顶栏底边框",
+            "class": "shapeGroup",
+            "x": 64,
+            "y": 55,
+            "w": 1376,
+            "h": 1
+          },
+          {
+            "id": "F581274D24764D8D8A319CF44478C295",
+            "name": "面包屑",
+            "class": "text",
+            "x": 80,
+            "y": 16,
+            "w": 200,
+            "h": 24
+          },
+          {
+            "id": "C4104D288E774A8C96766AC975C860D5",
+            "name": "生成章节按钮",
+            "class": "shapeGroup",
+            "x": 1280,
+            "y": 12,
+            "w": 120,
+            "h": 32
+          },
+          {
+            "id": "4BD40755CC50479CBF5F3E9EB7E547D8",
+            "name": "生成按钮文字",
+            "class": "text",
+            "x": 1296,
+            "y": 18,
+            "w": 88,
+            "h": 20
+          },
+          {
+            "id": "FCE7B4016A2E4A09BA30DD5851D8C89C",
+            "name": "Tab栏",
+            "class": "shapeGroup",
+            "x": 64,
+            "y": 56,
+            "w": 1376,
+            "h": 48
+          },
+          {
+            "id": "3A1E1257140D421D9E009F39AF76C5DD",
+            "name": "Tab选中下划线",
+            "class": "shapeGroup",
+            "x": 80,
+            "y": 102,
+            "w": 80,
+            "h": 2
+          },
+          {
+            "id": "B5C749D405904DAF813BCAE4F919562E",
+            "name": "Tab-阅读",
+            "class": "text",
+            "x": 80,
+            "y": 68,
+            "w": 80,
+            "h": 20
+          },
+          {
+            "id": "71C6D5C34B454B17A68691678E82B648",
+            "name": "Tab-回看",
+            "class": "text",
+            "x": 180,
+            "y": 68,
+            "w": 80,
+            "h": 20
+          },
+          {
+            "id": "C08B646C279343919E3F377CBE6D4719",
+            "name": "阅读卡片",
+            "class": "shapeGroup",
+            "x": 320,
+            "y": 130,
+            "w": 720,
+            "h": 420
+          },
+          {
+            "id": "618C0D5F74D546FFBCFB836A7029F609",
+            "name": "章节标题",
+            "class": "text",
+            "x": 352,
+            "y": 162,
+            "w": 200,
+            "h": 28
+          },
+          {
+            "id": "455096F6EE774A45B6B527C7838B9BDD",
+            "name": "正文段落1",
+            "class": "text",
+            "x": 352,
+            "y": 210,
+            "w": 656,
+            "h": 24
+          },
+          {
+            "id": "39AB7B0C74A848DBAD4DE12BD71DE75F",
+            "name": "正文段落2",
+            "class": "text",
+            "x": 352,
+            "y": 242,
+            "w": 656,
+            "h": 24
+          },
+          {
+            "id": "2AC1CE54F9DA4002B992FE18D23854A8",
+            "name": "正文段落3",
+            "class": "text",
+            "x": 352,
+            "y": 274,
+            "w": 656,
+            "h": 24
+          },
+          {
+            "id": "77B2C50E486548188ACCD700CE78C8D9",
+            "name": "决策区卡片",
+            "class": "shapeGroup",
+            "x": 320,
+            "y": 590,
+            "w": 720,
+            "h": 200
+          },
+          {
+            "id": "D0E1D60BEB2F4DA899FE4726A7A0C4EE",
+            "name": "决策区顶部装饰",
+            "class": "shapeGroup",
+            "x": 320,
+            "y": 590,
+            "w": 720,
+            "h": 2
+          },
+          {
+            "id": "689B828C3FC145C2B229DAB14A83E6B8",
+            "name": "局势描述",
+            "class": "text",
+            "x": 344,
+            "y": 610,
+            "w": 200,
+            "h": 18
+          },
+          {
+            "id": "7FE343DFF9C44BD3AEBE9C17553E0D92",
+            "name": "决策输入框",
+            "class": "shapeGroup",
+            "x": 344,
+            "y": 640,
+            "w": 672,
+            "h": 60
+          },
+          {
+            "id": "3F1707F0E9544850A8C86C97EEE15763",
+            "name": "决策占位符",
+            "class": "text",
+            "x": 356,
+            "y": 650,
+            "w": 200,
+            "h": 18
+          },
+          {
+            "id": "245F7D078D63478B8B293A0EBE68A352",
+            "name": "提交决策按钮",
+            "class": "shapeGroup",
+            "x": 880,
+            "y": 720,
+            "w": 136,
+            "h": 36
+          },
+          {
+            "id": "94B43E8E7C744B48809D40F0C6E08ECD",
+            "name": "提交按钮文字",
+            "class": "text",
+            "x": 900,
+            "y": 728,
+            "w": 96,
+            "h": 20
+          }
+        ]
+      }
+    },
+    {
+      "page_id": "ECEDAE31894647DFA6BA286317D70548",
+      "page_name": "p007-章节回看",
+      "artboard": {
+        "id": "5B36BB4508F44C7AA567710A62A2A0C8",
+        "name": "p007-章节回看",
+        "width": 1440,
+        "height": 900,
+        "layers": [
+          {
+            "id": "4C321C1BF72843318D5CE08B902A0F22",
+            "name": "页面背景",
+            "class": "shapeGroup",
+            "x": 0,
+            "y": 0,
+            "w": 1440,
+            "h": 900
+          },
+          {
+            "id": "0C61C9368F1C4EC2A844C9A0DBF6B21D",
+            "name": "折叠侧栏",
+            "class": "shapeGroup",
+            "x": 0,
+            "y": 0,
+            "w": 64,
+            "h": 900
+          },
+          {
+            "id": "C01EA275B10147C697EF8059D28C24B6",
+            "name": "侧栏右边框",
+            "class": "shapeGroup",
+            "x": 63,
+            "y": 0,
+            "w": 1,
+            "h": 900
+          },
+          {
+            "id": "F28362382F5D4E0BACDD659059424F10",
+            "name": "侧栏图标-0",
+            "class": "text",
+            "x": 20,
+            "y": 92,
+            "w": 24,
+            "h": 24
+          },
+          {
+            "id": "E8E854C21F3048E4A86C33319E2E361E",
+            "name": "图标背景-1",
+            "class": "shapeGroup",
+            "x": 8,
+            "y": 128,
+            "w": 48,
+            "h": 48
+          },
+          {
+            "id": "2F87F210B121409F857583D921279BA1",
+            "name": "侧栏图标-1",
+            "class": "text",
+            "x": 20,
+            "y": 140,
+            "w": 24,
+            "h": 24
+          },
+          {
+            "id": "2331DA00E47248D1ABABDA18FB5A8CEF",
+            "name": "侧栏图标-2",
+            "class": "text",
+            "x": 20,
+            "y": 188,
+            "w": 24,
+            "h": 24
+          },
+          {
+            "id": "A023D3C7687846F5A54E168CB61A5A31",
+            "name": "顶栏",
+            "class": "shapeGroup",
+            "x": 64,
+            "y": 0,
+            "w": 1376,
+            "h": 56
+          },
+          {
+            "id": "893ED491B2104573855E8CA73D3A4003",
+            "name": "顶栏底边框",
+            "class": "shapeGroup",
+            "x": 64,
+            "y": 55,
+            "w": 1376,
+            "h": 1
+          },
+          {
+            "id": "3BC757A477354D53B03872FB541B08E6",
+            "name": "面包屑",
+            "class": "text",
+            "x": 80,
+            "y": 16,
+            "w": 200,
+            "h": 24
+          },
+          {
+            "id": "05ADF2282BAB4511BC62A1046E91C3EC",
+            "name": "Tab栏",
+            "class": "shapeGroup",
+            "x": 64,
+            "y": 56,
+            "w": 1376,
+            "h": 48
+          },
+          {
+            "id": "EE838B56FD484ABBAF8F2935E6E7B20A",
+            "name": "Tab选中下划线",
+            "class": "shapeGroup",
+            "x": 180,
+            "y": 102,
+            "w": 80,
+            "h": 2
+          },
+          {
+            "id": "3B1BBB7B1BC94C80833486EEE5201798",
+            "name": "Tab-阅读",
+            "class": "text",
+            "x": 80,
+            "y": 68,
+            "w": 80,
+            "h": 20
+          },
+          {
+            "id": "66402549B26C41DB845107AC070C1DC6",
+            "name": "Tab-回看",
+            "class": "text",
+            "x": 180,
+            "y": 68,
+            "w": 80,
+            "h": 20
+          },
+          {
+            "id": "6899C3E17856441CA4CB0694B4B2BBE2",
+            "name": "章节目录栏",
+            "class": "shapeGroup",
+            "x": 64,
+            "y": 104,
+            "w": 220,
+            "h": 796
+          },
+          {
+            "id": "AFA74AAAF1F04D1EB6C6730197D3A728",
+            "name": "目录右边框",
+            "class": "shapeGroup",
+            "x": 283,
+            "y": 104,
+            "w": 1,
+            "h": 796
+          },
+          {
+            "id": "C5B30A818A6242CC94970BA9AAAD3544",
+            "name": "目录标题",
+            "class": "text",
+            "x": 80,
+            "y": 116,
+            "w": 80,
+            "h": 18
+          },
+          {
+            "id": "6C11CCC71141418A89B5FADB2D59B007",
+            "name": "章节选中背景-0",
+            "class": "shapeGroup",
+            "x": 64,
+            "y": 148,
+            "w": 220,
+            "h": 44
+          },
+          {
+            "id": "700D29E7E3444397971ACEC14868AA5E",
+            "name": "章节选中竖条-0",
+            "class": "shapeGroup",
+            "x": 64,
+            "y": 148,
+            "w": 3,
+            "h": 44
+          },
+          {
+            "id": "8290F42A5ED04C89AB548FE23BB78E0F",
+            "name": "章节项-0",
+            "class": "text",
+            "x": 80,
+            "y": 160,
+            "w": 180,
+            "h": 20
+          },
+          {
+            "id": "4FDD32B5C7E04A848E2B7ADD1C93F786",
+            "name": "章节项-1",
+            "class": "text",
+            "x": 80,
+            "y": 204,
+            "w": 180,
+            "h": 20
+          },
+          {
+            "id": "AD9ED49AE9E74EC980998E2A41F87F1E",
+            "name": "章节项-2",
+            "class": "text",
+            "x": 80,
+            "y": 248,
+            "w": 180,
+            "h": 20
+          },
+          {
+            "id": "38408E9BB68C4BAEAC5458E673E29A8F",
+            "name": "章节项-3",
+            "class": "text",
+            "x": 80,
+            "y": 292,
+            "w": 180,
+            "h": 20
+          },
+          {
+            "id": "FD6D1A02F11C4B9C8EC9D3994C18E3DF",
+            "name": "章节项-4",
+            "class": "text",
+            "x": 80,
+            "y": 336,
+            "w": 180,
+            "h": 20
+          },
+          {
+            "id": "7C874AEE5AE44CE48089A0EDF31FCF1B",
+            "name": "阅读卡片",
+            "class": "shapeGroup",
+            "x": 400,
+            "y": 140,
+            "w": 720,
+            "h": 420
+          },
+          {
+            "id": "D4C8B483ACEC4EE1AC7E1BE06A6BF6CD",
+            "name": "章节标题",
+            "class": "text",
+            "x": 432,
+            "y": 172,
+            "w": 200,
+            "h": 28
+          },
+          {
+            "id": "8BDC3E51490D4D3B9086D1B686AC1A96",
+            "name": "正文段落1",
+            "class": "text",
+            "x": 432,
+            "y": 220,
+            "w": 656,
+            "h": 24
+          },
+          {
+            "id": "80C9D267355748A9A00074F76363644A",
+            "name": "正文段落2",
+            "class": "text",
+            "x": 432,
+            "y": 252,
+            "w": 656,
+            "h": 24
+          },
+          {
+            "id": "69463F52D9844EB18288DB39216FD502",
+            "name": "正文段落3",
+            "class": "text",
+            "x": 432,
+            "y": 284,
+            "w": 656,
+            "h": 24
+          },
+          {
+            "id": "EC6F8D715CA54A3E8FB9117C5418AD2B",
+            "name": "正文段落4",
+            "class": "text",
+            "x": 432,
+            "y": 316,
+            "w": 656,
+            "h": 24
+          }
+        ]
+      }
+    }
+  ],
+  "metadata": {
+    "total_pages": 7,
+    "sketch_document_version": 123,
+    "color_format": "HEX in tokens, 0-1 float in sketch",
+    "platform": "Web (1440px)",
+    "theme": "light",
+    "style_concept": "紫金书卷"
+  }
+}

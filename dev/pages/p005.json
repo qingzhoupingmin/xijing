@@ -1,0 +1,164 @@
+{
+  "page_id": "p005",
+  "page_name": "创建故事",
+  "route": "/story/create",
+  "layout": {
+    "type": "side-nav",
+    "topbar": {
+      "height": 56,
+      "background": "#FFFFFF",
+      "border": "1px #E5E7EB"
+    },
+    "sidebar": {
+      "width": 220,
+      "background": "#FFFFFF",
+      "border": "1px #E5E7EB"
+    },
+    "content": {
+      "background": "#F9FAFB",
+      "padding": 24,
+      "maxWidth": null
+    }
+  },
+  "regions": [
+    {
+      "id": "sidebar",
+      "name": "侧边栏",
+      "layout": {
+        "direction": "column",
+        "align": "stretch",
+        "gap": 4,
+        "padding": 16
+      },
+      "components": [
+        { "id": "logo", "type": "Text", "props": { "children": "戏境", "fontSize": 24, "fontWeight": 700, "color": "#7C5CFC" } },
+        { "id": "nav-story", "type": "NavItem", "props": { "icon": "icon_story", "label": "我的故事" } },
+        { "id": "section-workshop", "type": "Text", "props": { "children": "世界观工坊", "fontSize": 12, "color": "#9CA3AF", "padding": "8px 16px" } },
+        { "id": "nav-create", "type": "NavItem", "props": { "icon": "icon_add", "label": "创建故事", "active": true } },
+        { "id": "nav-world", "type": "NavItem", "props": { "icon": "icon_settings", "label": "世界设定" } },
+        { "id": "nav-character", "type": "NavItem", "props": { "icon": "icon_user", "label": "角色设定" } }
+      ]
+    },
+    {
+      "id": "topbar",
+      "name": "顶栏",
+      "layout": {
+        "direction": "row",
+        "align": "center",
+        "padding": "0 24px"
+      },
+      "components": [
+        { "id": "breadcrumb", "type": "Text", "props": { "children": "世界观工坊 > 创建故事", "color": "#6B7280" } }
+      ]
+    },
+    {
+      "id": "steps",
+      "name": "步骤导航",
+      "layout": {
+        "direction": "row",
+        "align": "center",
+        "justify": "center",
+        "gap": 64,
+        "padding": "0 0 24px 0"
+      },
+      "components": [
+        { "id": "step-1", "type": "StepNav", "props": { "number": 1, "label": "基础信息", "status": "current" } },
+        { "id": "step-2", "type": "StepNav", "props": { "number": 2, "label": "大纲编辑", "status": "pending" } },
+        { "id": "step-3", "type": "StepNav", "props": { "number": 3, "label": "世界设定", "status": "pending" } },
+        { "id": "step-4", "type": "StepNav", "props": { "number": 4, "label": "角色设定", "status": "pending" } }
+      ]
+    },
+    {
+      "id": "form",
+      "name": "表单区",
+      "layout": {
+        "direction": "column",
+        "align": "stretch",
+        "gap": 24,
+        "padding": 0
+      },
+      "components": [
+        { "id": "form-card", "type": "Card", "props": { "children": "StepFormContent" } }
+      ]
+    },
+    {
+      "id": "actions",
+      "name": "操作按钮",
+      "layout": {
+        "direction": "row",
+        "align": "center",
+        "justify": "flex-end",
+        "gap": 12,
+        "padding": "24px 0 0 0"
+      },
+      "components": [
+        { "id": "cancel-btn", "type": "Button", "props": { "variant": "secondary", "children": "取消" } },
+        { "id": "prev-btn", "type": "Button", "props": { "variant": "secondary", "children": "上一步", "condition": "step > 1" } },
+        { "id": "next-btn", "type": "Button", "props": { "variant": "primary", "children": "下一步" } }
+      ]
+    }
+  ],
+  "components": [
+    { "type": "Sidebar", "spec": "参考 components-schema.json" },
+    { "type": "TopBar", "spec": "参考 components-schema.json" },
+    { "type": "StepNav", "spec": "参考 components-schema.json" },
+    { "type": "Card", "spec": "参考 components-schema.json" },
+    { "type": "Input", "spec": "参考 components-schema.json" },
+    { "type": "Textarea", "spec": "参考 components-schema.json" },
+    { "type": "Select", "spec": "参考 components-schema.json" },
+    { "type": "Button", "spec": "参考 components-schema.json" },
+    { "type": "Tag", "spec": "参考 components-schema.json" }
+  ],
+  "states": ["normal"],
+  "navigation": {
+    "entry_from": [
+      { "page_id": "p001", "label": "新建故事按钮" }
+    ],
+    "links_to": [
+      { "page_id": "p001", "label": "返回列表", "trigger": "取消按钮" },
+      { "page_id": "p004", "label": "开始演绎", "trigger": "完成创建后跳转" }
+    ]
+  },
+  "steps": {
+    "1": {
+      "title": "基础信息",
+      "fields": [
+        { "name": "title", "type": "Input", "label": "故事标题", "required": true, "placeholder": "请输入故事标题" },
+        { "name": "theme", "type": "Select", "label": "故事主题", "options": ["悬疑", "奇幻", "科幻", "历史", "都市", "爱情", "武侠", "其他"] },
+        { "name": "premise", "type": "Textarea", "label": "故事前提", "rows": 3, "placeholder": "用一句话概括你的故事..." }
+      ]
+    },
+    "2": {
+      "title": "大纲编辑",
+      "fields": [
+        { "name": "structure", "type": "Textarea", "label": "起承转合", "rows": 2 },
+        { "name": "chapters", "type": "List", "label": "章节规划" },
+        { "name": "ending", "type": "Textarea", "label": "结局方向", "rows": 2 }
+      ]
+    },
+    "3": {
+      "title": "世界设定",
+      "fields": [
+        { "name": "detail", "type": "RadioGroup", "label": "详细度", "options": [{ "value": "medium", "label": "中等" }, { "value": "deep", "label": "深度" }] },
+        { "name": "worldIntro", "type": "Textarea", "label": "世界观简介", "rows": 3 },
+        { "name": "systemName", "type": "Input", "label": "体系名称", "placeholder": "如：魔法体系/修仙等级/科技路线" },
+        { "name": "systemDesc", "type": "Textarea", "label": "体系描述", "rows": 2 },
+        { "name": "factions", "type": "Textarea", "label": "阵营关系", "rows": 2 },
+        { "name": "geography", "type": "Textarea", "label": "地理概况", "rows": 2 },
+        { "name": "aiFill", "type": "Button", "props": { "variant": "gold", "icon": "icon_ai_fill", "children": "AI补全" } }
+      ]
+    },
+    "4": {
+      "title": "角色设定",
+      "fields": [
+        { "name": "protagonist", "type": "FormGroup", "label": "主角", "fields": [
+          { "name": "name", "type": "Input", "label": "姓名", "required": true },
+          { "name": "personality", "type": "Textarea", "label": "性格", "rows": 1 },
+          { "name": "background", "type": "Textarea", "label": "背景", "rows": 2 },
+          { "name": "ability", "type": "Input", "label": "能力" }
+        ]},
+        { "name": "supporting", "type": "List", "label": "配角", "itemFields": ["name", "stance", "relation"] }
+      ]
+    }
+  }
+}

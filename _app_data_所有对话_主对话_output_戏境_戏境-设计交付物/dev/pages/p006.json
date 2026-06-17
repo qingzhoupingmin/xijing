@@ -1,0 +1,87 @@
+{
+  "page_id": "p006",
+  "page_name": "登录页",
+  "route": "/login",
+  "layout": {
+    "type": "fullscreen",
+    "background": "#F9FAFB",
+    "content": {
+      "align": "center",
+      "justify": "center"
+    }
+  },
+  "regions": [
+    {
+      "id": "decorations",
+      "name": "背景装饰",
+      "layout": {
+        "position": "absolute",
+        "top": "50%",
+        "left": "50%",
+        "transform": "translate(-50%, -50%)"
+      },
+      "components": [
+        { "id": "glow", "type": "Box", "props": { "width": 600, "height": 600, "background": "rgba(124, 92, 252, 0.08)", "borderRadius": "50%" } }
+      ]
+    },
+    {
+      "id": "login-card",
+      "name": "登录卡片",
+      "layout": {
+        "align": "stretch",
+        "width": 400,
+        "gap": 20,
+        "padding": 32
+      },
+      "components": [
+        { "id": "accent-line", "type": "Box", "props": { "height": 2, "gradient": "primary_gold" } },
+        { "id": "logo", "type": "Text", "props": { "children": "戏境", "fontSize": 32, "fontWeight": 700, "color": "#7C5CFC", "textAlign": "center" } },
+        { "id": "subtitle", "type": "Text", "props": { "children": "AI驱动互动叙事平台", "fontSize": 12, "color": "#6B7280", "textAlign": "center" } },
+        { "id": "tabs", "type": "TabSwitch", "props": { "tabs": [{ "key": "login", "label": "登录" }, { "key": "register", "label": "注册", "active": true }] } },
+        { "id": "form", "type": "Form", "props": { "layout": "column", "gap": 16 } }
+      ]
+    }
+  ],
+  "components": [
+    { "type": "Card", "spec": "参考 components-schema.json" },
+    { "type": "TabSwitch", "spec": "参考 components-schema.json" },
+    { "type": "Input", "spec": "参考 components-schema.json" },
+    { "type": "Button", "spec": "参考 components-schema.json" }
+  ],
+  "states": ["normal"],
+  "navigation": {
+    "entry_from": null,
+    "links_to": [
+      { "page_id": "p001", "label": "首页", "trigger": "登录成功后跳转" }
+    ]
+  },
+  "tabs": {
+    "login": {
+      "fields": [
+        { "name": "email", "type": "Input", "label": "邮箱", "placeholder": "请输入邮箱", "required": true },
+        { "name": "password", "type": "Input", "label": "密码", "type": "password", "placeholder": "请输入密码", "required": true }
+      ],
+      "actions": [
+        { "label": "登录", "variant": "primary", "fullWidth": true }
+      ],
+      "footer": {
+        "text": "还没有账号？",
+        "link": { "label": "去注册", "to": "register" }
+      }
+    },
+    "register": {
+      "fields": [
+        { "name": "email", "type": "Input", "label": "邮箱", "placeholder": "请输入邮箱", "required": true },
+        { "name": "password", "type": "Input", "label": "密码", "type": "password", "placeholder": "请输入密码", "required": true },
+        { "name": "confirmPassword", "type": "Input", "label": "确认密码", "type": "password", "placeholder": "请再次输入密码", "required": true }
+      ],
+      "actions": [
+        { "label": "注册", "variant": "primary", "fullWidth": true }
+      ],
+      "footer": {
+        "text": "已有账号？",
+        "link": { "label": "去登录", "to": "login" }
+      }
+    }
+  }
+}

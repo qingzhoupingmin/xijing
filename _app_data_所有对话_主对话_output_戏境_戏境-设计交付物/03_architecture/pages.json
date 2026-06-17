@@ -1,0 +1,89 @@
+{
+  "project_name": "戏境",
+  "navigation_type": "side-nav",
+  "modules": [
+    {
+      "module_name": "用户系统",
+      "pages": [
+        {
+          "page_id": "p006",
+          "page_name": "登录页",
+          "level": 1,
+          "parent_id": null,
+          "content_blocks": ["登录表单", "注册切换"],
+          "entry_path": "未登录自动跳转",
+          "priority": "P0"
+        },
+        {
+          "page_id": "p003",
+          "page_name": "个人中心",
+          "level": 1,
+          "parent_id": null,
+          "content_blocks": ["昵称修改", "密码修改"],
+          "entry_path": "侧边栏 > 个人中心",
+          "priority": "P0"
+        },
+        {
+          "page_id": "p002",
+          "page_name": "API配置",
+          "level": 1,
+          "parent_id": null,
+          "content_blocks": ["已配置模型列表", "添加配置表单", "测试连接按钮", "删除/启用切换"],
+          "entry_path": "侧边栏 > API配置",
+          "priority": "P0"
+        }
+      ]
+    },
+    {
+      "module_name": "世界观工坊",
+      "pages": [
+        {
+          "page_id": "p005",
+          "page_name": "创建故事",
+          "level": 2,
+          "parent_id": "p001",
+          "content_blocks": ["步骤导航", "基础信息表单", "大纲编辑器", "世界设定表单（含AI补全）", "角色设定表单", "完成确认"],
+          "entry_path": "故事列表 > 新建故事",
+          "priority": "P0"
+        }
+      ]
+    },
+    {
+      "module_name": "故事演绎",
+      "pages": [
+        {
+          "page_id": "p004",
+          "page_name": "故事演绎",
+          "level": 2,
+          "parent_id": "p001",
+          "content_blocks": ["章节阅读区（Markdown渲染）", "局势描述区", "决策输入区", "模型选择下拉", "生成/重试按钮", "章节进度", "章节回看标签页", "修改后续大纲入口"],
+          "entry_path": "故事列表 > 继续",
+          "priority": "P0"
+        },
+        {
+          "page_id": "p007",
+          "page_name": "章节回看",
+          "level": 2,
+          "parent_id": "p004",
+          "content_blocks": ["章节目录侧栏", "章节正文阅读"],
+          "entry_path": "故事演绎 > 回看标签",
+          "priority": "P0"
+        }
+      ]
+    },
+    {
+      "module_name": "故事管理",
+      "pages": [
+        {
+          "page_id": "p001",
+          "page_name": "故事列表",
+          "level": 1,
+          "parent_id": null,
+          "content_blocks": ["进行中故事卡片（含进度）", "已完成故事卡片", "新建故事按钮", "故事上限提示"],
+          "entry_path": "侧边栏 > 我的故事",
+          "priority": "P0"
+        }
+      ]
+    }
+  ]
+}

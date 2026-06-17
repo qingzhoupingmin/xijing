@@ -1,0 +1,96 @@
+{
+  "page_id": "p001",
+  "page_name": "故事列表",
+  "route": "/stories",
+  "layout": {
+    "type": "side-nav",
+    "topbar": {
+      "height": 56,
+      "background": "#FFFFFF",
+      "border": "1px #E5E7EB"
+    },
+    "sidebar": {
+      "width": 220,
+      "background": "#FFFFFF",
+      "border": "1px #E5E7EB"
+    },
+    "content": {
+      "background": "#F9FAFB",
+      "padding": 24,
+      "maxWidth": null
+    }
+  },
+  "regions": [
+    {
+      "id": "sidebar",
+      "name": "侧边栏",
+      "layout": {
+        "direction": "column",
+        "align": "stretch",
+        "gap": 4,
+        "padding": 16
+      },
+      "components": [
+        { "id": "logo", "type": "Text", "props": { "children": "戏境", "fontSize": 24, "fontWeight": 700, "color": "#7C5CFC" } },
+        { "id": "nav-story", "type": "NavItem", "props": { "icon": "icon_story", "label": "我的故事", "active": true } },
+        { "id": "nav-api", "type": "NavItem", "props": { "icon": "icon_settings", "label": "API配置" } },
+        { "id": "nav-profile", "type": "NavItem", "props": { "icon": "icon_user", "label": "个人中心" } }
+      ]
+    },
+    {
+      "id": "topbar",
+      "name": "顶栏",
+      "layout": {
+        "direction": "row",
+        "align": "center",
+        "justify": "space-between",
+        "padding": "0 24px"
+      },
+      "components": [
+        { "id": "page-title", "type": "Text", "props": { "children": "我的故事", "fontSize": 32, "fontWeight": 600, "color": "#1F2937" } },
+        { "id": "create-btn", "type": "Button", "props": { "variant": "primary", "children": "新建故事" } }
+      ]
+    },
+    {
+      "id": "content",
+      "name": "故事列表内容区",
+      "layout": {
+        "direction": "row",
+        "wrap": "wrap",
+        "gap": 16,
+        "padding": 0
+      },
+      "components": [
+        { "id": "story-cards", "type": "StoryCard[]", "props": { "repeat": true } }
+      ]
+    }
+  ],
+  "components": [
+    { "type": "Sidebar", "spec": "参考 components-schema.json" },
+    { "type": "TopBar", "spec": "参考 components-schema.json" },
+    { "type": "NavItem", "spec": "参考 components-schema.json" },
+    { "type": "StoryCard", "spec": "参考 components-schema.json" },
+    { "type": "Button", "spec": "参考 components-schema.json" },
+    { "type": "Tag", "spec": "参考 components-schema.json" }
+  ],
+  "states": ["normal"],
+  "navigation": {
+    "entry_from": null,
+    "links_to": [
+      { "page_id": "p005", "label": "创建故事", "trigger": "新建故事按钮" },
+      { "page_id": "p004", "label": "继续故事", "trigger": "故事卡片继续按钮" }
+    ]
+  },
+  "api_data": {
+    "stories": [
+      {
+        "id": "string",
+        "title": "string",
+        "status": "in_progress | completed",
+        "progress": "string (如 3/12)",
+        "model": "string (如 deepseek-chat)",
+        "updatedAt": "string (如 2024-01-15)"
+      }
+    ]
+  }
+}

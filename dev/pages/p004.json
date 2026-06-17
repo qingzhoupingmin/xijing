@@ -1,0 +1,141 @@
+{
+  "page_id": "p004",
+  "page_name": "故事演绎",
+  "route": "/story/:id/playing",
+  "layout": {
+    "type": "side-collapsed-nav",
+    "topbar": {
+      "height": 56,
+      "background": "#FFFFFF",
+      "border": "1px #E5E7EB"
+    },
+    "sidebar": {
+      "width": 64,
+      "background": "#FFFFFF",
+      "border": "none"
+    },
+    "content": {
+      "background": "#F9FAFB",
+      "padding": 0,
+      "maxWidth": 720
+    }
+  },
+  "regions": [
+    {
+      "id": "sidebar",
+      "name": "侧边栏(折叠)",
+      "layout": {
+        "direction": "column",
+        "align": "center",
+        "gap": 24,
+        "padding": "16px 0"
+      },
+      "components": [
+        { "id": "menu-btn", "type": "Button", "props": { "variant": "text", "icon": "icon_menu" } },
+        { "id": "nav-story", "type": "NavItem", "props": { "icon": "icon_story", "collapsed": true } },
+        { "id": "nav-settings", "type": "NavItem", "props": { "icon": "icon_settings", "collapsed": true } },
+        { "id": "nav-user", "type": "NavItem", "props": { "icon": "icon_user", "collapsed": true } }
+      ]
+    },
+    {
+      "id": "topbar",
+      "name": "顶栏",
+      "layout": {
+        "direction": "row",
+        "align": "center",
+        "justify": "space-between",
+        "padding": "0 24px"
+      },
+      "components": [
+        { "id": "left-group", "type": "Flex", "props": { "gap": 16, "align": "center" }, "children": [
+          { "id": "collapse-btn", "type": "Button", "props": { "variant": "text", "icon": "icon_menu" } },
+          { "id": "breadcrumb", "type": "Text", "props": { "children": "我的故事 > 暗影编年", "color": "#6B7280" } }
+        ]},
+        { "id": "right-group", "type": "Flex", "props": { "gap": 12, "align": "center" }, "children": [
+          { "id": "model-select", "type": "Select", "props": { "placeholder": "选择模型" } },
+          { "id": "generate-btn", "type": "Button", "props": { "variant": "gold", "children": "生成章节" } }
+        ]}
+      ]
+    },
+    {
+      "id": "tabs",
+      "name": "标签页",
+      "layout": {
+        "direction": "row",
+        "align": "center",
+        "gap": 24,
+        "padding": "0 24px"
+      },
+      "components": [
+        { "id": "tab-reading", "type": "TabItem", "props": { "icon": "icon_story", "label": "📖 阅读", "active": true } },
+        { "id": "tab-review", "type": "TabItem", "props": { "icon": "icon_chapter", "label": "📚 回看" } }
+      ]
+    },
+    {
+      "id": "main-content",
+      "name": "主内容区",
+      "layout": {
+        "direction": "column",
+        "align": "center",
+        "gap": 16,
+        "padding": "24px 0"
+      },
+      "components": [
+        { "id": "generating-progress", "type": "GeneratingProgress", "props": { "condition": "loading" } },
+        { "id": "reading-card", "type": "ReadingCard", "props": { "condition": "!loading && !error" } },
+        { "id": "error-card", "type": "Card", "props": { "condition": "error", "variant": "error" } },
+        { "id": "decision-panel", "type": "DecisionPanel", "props": { "condition": "!loading && !error" } }
+      ]
+    }
+  ],
+  "components": [
+    { "type": "Sidebar", "spec": "参考 components-schema.json" },
+    { "type": "TopBar", "spec": "参考 components-schema.json" },
+    { "type": "TabBar", "spec": "参考 components-schema.json" },
+    { "type": "ReadingCard", "spec": "参考 components-schema.json" },
+    { "type": "DecisionPanel", "spec": "参考 components-schema.json" },
+    { "type": "Textarea", "spec": "参考 components-schema.json" },
+    { "type": "Button", "spec": "参考 components-schema.json" },
+    { "type": "Select", "spec": "参考 components-schema.json" },
+    { "type": "GeneratingProgress", "spec": "参考 components-schema.json" }
+  ],
+  "states": ["normal", "loading", "error"],
+  "navigation": {
+    "entry_from": [
+      { "page_id": "p001", "label": "故事卡片继续按钮" }
+    ],
+    "links_to": [
+      { "page_id": "p001", "label": "返回列表", "trigger": "侧边栏菜单" },
+      { "page_id": "p007", "label": "章节回看", "trigger": "回看标签页" }
+    ]
+  },
+  "api_data": {
+    "story": {
+      "id": "string",
+      "title": "string",
+      "chapters": [
+        {
+          "id": "string",
+          "title": "string",
+          "content": "string (Markdown)"
+        }
+      ]
+    },
+    "currentChapter": {
+      "id": "string",
+      "title": "string",
+      "content": "string"
+    },
+    "situation": "string (局势描述)"
+  },
+  "special_states": {
+    "loading": {
+      "hide": ["decision-panel"],
+      "show": ["generating-progress", "reading-card-with-cursor"]
+    },
+    "error": {
+      "hide": ["decision-panel", "generating-progress"],
+      "show": ["error-card", "previous-chapter-content"]
+    }
+  }
+}

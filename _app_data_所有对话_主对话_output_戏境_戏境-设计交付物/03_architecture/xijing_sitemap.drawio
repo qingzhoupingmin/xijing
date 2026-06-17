@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" version="24.0.0">
+  <diagram id="xijing-sitemap" name="戏境站点地图">
+    <mxGraphModel dx="1100" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        
+        <mxCell id="topbar" value="顶栏：Logo + 戏境 + 用户头像" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;container=1;collapsible=0;" parent="1" vertex="1">
+          <mxGeometry x="200" y="40" width="700" height="50" as="geometry" />
+        </mxCell>
+        
+        
+        <mxCell id="sidebar" value="侧边栏" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;verticalAlign=top;container=1;collapsible=0;" parent="1" vertex="1">
+          <mxGeometry x="200" y="120" width="140" height="300" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="nav1" value="📖 我的故事" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="215" y="810" width="110" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="nav2" value="⚙️ API配置" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="215" y="700" width="110" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="nav3" value="👤 个人中心" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="215" y="490" width="110" height="40" as="geometry" />
+        </mxCell>
+        
+        
+        <mxCell id="content" value="内容区" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E8E8E8;dashed=1;verticalAlign=top;fontStyle=1;container=0;" parent="1" vertex="1">
+          <mxGeometry x="370" y="120" width="530" height="300" as="geometry" />
+        </mxCell>
+        
+        
+        <mxCell id="p001" value="p001 故事列表" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="400" y="830" width="150" height="50" as="geometry" />
+        </mxCell>
+        
+        
+        <mxCell id="p002" value="p002 API配置" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="680" y="950" width="150" height="50" as="geometry" />
+        </mxCell>
+        
+        
+        <mxCell id="p003" value="p003 个人中心" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="760" y="830" width="120" height="50" as="geometry" />
+        </mxCell>
+        
+        
+        <mxCell id="p005" value="p005 创建故事&amp;#xa;（步骤式：大纲→世界观→角色）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="400" y="710" width="210" height="50" as="geometry" />
+        </mxCell>
+        
+        
+        <mxCell id="p004" value="p004 故事演绎&amp;#xa;（章节阅读+决策+生成）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="640" y="710" width="200" height="50" as="geometry" />
+        </mxCell>
+        
+        
+        <mxCell id="p007" value="p007 章节回看&amp;#xa;（p004内标签页）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="640" y="490" width="200" height="50" as="geometry" />
+        </mxCell>
+        
+        
+        <mxCell id="p006" value="p006 登录页" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="400" y="490" width="130" height="50" as="geometry" />
+        </mxCell>
+        
+        
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" parent="1" source="nav1" target="p001" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" parent="1" source="nav2" target="p002" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" parent="1" source="nav3" target="p003" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="e4" value="新建故事" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" parent="1" source="p001" target="p005" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="e5" value="继续" style="edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="1" source="p001" target="p004" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="570" y="185" />
+              <mxPoint x="570" y="265" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="e6" value="创建完成" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" parent="1" source="p005" target="p004" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="e7" value="内嵌切换" style="edgeStyle=orthogonalEdgeStyle;rounded=0;dashed=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="p004" target="p007" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="e8" value="未登录跳转" style="edgeStyle=orthogonalEdgeStyle;rounded=0;dashed=1;" parent="1" source="p006" target="p001" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        
+        <mxCell id="legend_title" value="图例" style="text;html=1;align=left;verticalAlign=middle;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="200" y="460" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="leg1" value="L1 一级页面" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="200" y="600" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="leg2" value="L2 二级页面" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="340" y="610" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="leg3" value="内嵌视图" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="480" y="610" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="leg4" value="认证页面" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="620" y="610" width="120" height="30" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

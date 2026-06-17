@@ -1,0 +1,142 @@
+{
+  "page_id": "p007",
+  "page_name": "章节回看",
+  "route": "/story/:id/review",
+  "layout": {
+    "type": "side-collapsed-nav-with-chapter",
+    "topbar": {
+      "height": 56,
+      "background": "#FFFFFF",
+      "border": "1px #E5E7EB"
+    },
+    "sidebar": {
+      "width": 64,
+      "background": "#FFFFFF"
+    },
+    "chapter": {
+      "width": 220,
+      "background": "#FFFFFF",
+      "border": "1px #E5E7EB"
+    },
+    "content": {
+      "background": "#F9FAFB",
+      "padding": 0,
+      "maxWidth": 720
+    }
+  },
+  "regions": [
+    {
+      "id": "sidebar",
+      "name": "侧边栏(折叠)",
+      "layout": {
+        "direction": "column",
+        "align": "center",
+        "gap": 24,
+        "padding": "16px 0"
+      },
+      "components": [
+        { "id": "menu-btn", "type": "Button", "props": { "variant": "text", "icon": "icon_menu" } },
+        { "id": "nav-story", "type": "NavItem", "props": { "icon": "icon_story", "collapsed": true } },
+        { "id": "nav-settings", "type": "NavItem", "props": { "icon": "icon_settings", "collapsed": true } },
+        { "id": "nav-user", "type": "NavItem", "props": { "icon": "icon_user", "collapsed": true } }
+      ]
+    },
+    {
+      "id": "topbar",
+      "name": "顶栏",
+      "layout": {
+        "direction": "row",
+        "align": "center",
+        "justify": "space-between",
+        "padding": "0 24px"
+      },
+      "components": [
+        { "id": "breadcrumb", "type": "Text", "props": { "children": "我的故事 > 暗影编年", "color": "#6B7280" } }
+      ]
+    },
+    {
+      "id": "tabs",
+      "name": "标签页",
+      "layout": {
+        "direction": "row",
+        "align": "center",
+        "gap": 24,
+        "padding": "0 24px"
+      },
+      "components": [
+        { "id": "tab-reading", "type": "TabItem", "props": { "icon": "icon_story", "label": "📖 阅读" } },
+        { "id": "tab-review", "type": "TabItem", "props": { "icon": "icon_chapter", "label": "📚 回看", "active": true } }
+      ]
+    },
+    {
+      "id": "main-area",
+      "name": "主内容区",
+      "layout": {
+        "direction": "row",
+        "align": "stretch",
+        "gap": 0
+      },
+      "components": [
+        {
+          "id": "chapter-list",
+          "name": "章节目录",
+          "layout": {
+            "direction": "column",
+            "align": "stretch",
+            "gap": 0,
+            "width": 220,
+            "padding": 0
+          },
+          "components": [
+            { "id": "chapter-title", "type": "Text", "props": { "children": "章节目录", "fontSize": 14, "color": "#6B7280", "padding": "16px 20px" } },
+            { "id": "chapter-items", "type": "ChapterList", "props": { "repeat": true } }
+          ]
+        },
+        {
+          "id": "reading-area",
+          "name": "阅读区",
+          "layout": {
+            "direction": "column",
+            "align": "center",
+            "gap": 16,
+            "padding": "24px 0",
+            "flex": 1
+          },
+          "components": [
+            { "id": "reading-card", "type": "ReadingCard" }
+          ]
+        }
+      ]
+    }
+  ],
+  "components": [
+    { "type": "Sidebar", "spec": "参考 components-schema.json" },
+    { "type": "TopBar", "spec": "参考 components-schema.json" },
+    { "type": "TabBar", "spec": "参考 components-schema.json" },
+    { "type": "ChapterList", "spec": "参考 components-schema.json" },
+    { "type": "ReadingCard", "spec": "参考 components-schema.json" }
+  ],
+  "states": ["normal"],
+  "navigation": {
+    "entry_from": [
+      { "page_id": "p004", "label": "回看标签页" }
+    ],
+    "links_to": [
+      { "page_id": "p004", "label": "返回阅读", "trigger": "阅读标签页" }
+    ]
+  },
+  "api_data": {
+    "story": {
+      "id": "string",
+      "title": "string",
+      "chapters": [
+        {
+          "id": "string",
+          "title": "string",
+          "content": "string (Markdown)",
+          "createdAt": "string"
+        }
+      ]
+    }
+  }
+}

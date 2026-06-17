@@ -1,0 +1,193 @@
+[
+  {
+    "id": "icon_menu",
+    "type": "unicode",
+    "value": "☰",
+    "size": 24,
+    "recommendation": "替换为 Lucide Menu 图标"
+  },
+  {
+    "id": "icon_search",
+    "type": "unicode",
+    "value": "🔍",
+    "size": 16,
+    "recommendation": "替换为 Lucide Search 图标"
+  },
+  {
+    "id": "icon_close",
+    "type": "unicode",
+    "value": "✕",
+    "size": 16,
+    "recommendation": "替换为 Lucide X 图标"
+  },
+  {
+    "id": "icon_add",
+    "type": "unicode",
+    "value": "+",
+    "size": 20,
+    "recommendation": "替换为 Lucide Plus 图标"
+  },
+  {
+    "id": "icon_delete",
+    "type": "unicode",
+    "value": "🗑",
+    "size": 16,
+    "recommendation": "替换为 Lucide Trash2 图标"
+  },
+  {
+    "id": "icon_eye",
+    "type": "unicode",
+    "value": "👁",
+    "size": 16,
+    "recommendation": "替换为 Lucide Eye 图标"
+  },
+  {
+    "id": "icon_check",
+    "type": "unicode",
+    "value": "✓",
+    "size": 14,
+    "recommendation": "替换为 Lucide Check 图标"
+  },
+  {
+    "id": "icon_error",
+    "type": "unicode",
+    "value": "❌",
+    "size": 24,
+    "recommendation": "替换为 Lucide AlertCircle 图标"
+  },
+  {
+    "id": "icon_back",
+    "type": "unicode",
+    "value": "←",
+    "size": 20,
+    "recommendation": "替换为 Lucide ArrowLeft 图标"
+  },
+  {
+    "id": "icon_forward",
+    "type": "unicode",
+    "value": "→",
+    "size": 20,
+    "recommendation": "替换为 Lucide ArrowRight 图标"
+  },
+  {
+    "id": "icon_ai_fill",
+    "type": "unicode",
+    "value": "✨",
+    "size": 14,
+    "recommendation": "替换为 Lucide Sparkles 图标"
+  },
+  {
+    "id": "icon_story",
+    "type": "unicode",
+    "value": "📖",
+    "size": 20,
+    "recommendation": "替换为 Lucide BookOpen 图标"
+  },
+  {
+    "id": "icon_model",
+    "type": "unicode",
+    "value": "🤖",
+    "size": 20,
+    "recommendation": "替换为 Lucide Bot 图标"
+  },
+  {
+    "id": "icon_generate",
+    "type": "unicode",
+    "value": "⚡",
+    "size": 20,
+    "recommendation": "替换为 Lucide Zap 图标"
+  },
+  {
+    "id": "icon_cancel",
+    "type": "unicode",
+    "value": "⏹",
+    "size": 16,
+    "recommendation": "替换为 Lucide Square 图标"
+  },
+  {
+    "id": "icon_chapter",
+    "type": "unicode",
+    "value": "📑",
+    "size": 20,
+    "recommendation": "替换为 Lucide FileText 图标"
+  },
+  {
+    "id": "icon_settings",
+    "type": "unicode",
+    "value": "⚙",
+    "size": 20,
+    "recommendation": "替换为 Lucide Settings 图标"
+  },
+  {
+    "id": "icon_user",
+    "type": "unicode",
+    "value": "👤",
+    "size": 20,
+    "recommendation": "替换为 Lucide User 图标"
+  },
+  {
+    "id": "icon_password",
+    "type": "unicode",
+    "value": "🔒",
+    "size": 16,
+    "recommendation": "替换为 Lucide Lock 图标"
+  },
+  {
+    "id": "icon_email",
+    "type": "unicode",
+    "value": "✉",
+    "size": 16,
+    "recommendation": "替换为 Lucide Mail 图标"
+  },
+  {
+    "id": "icon_dropdown",
+    "type": "unicode",
+    "value": "▼",
+    "size": 12,
+    "recommendation": "替换为 Lucide ChevronDown 图标"
+  },
+  {
+    "id": "icon_collapse",
+    "type": "unicode",
+    "value": "◀",
+    "size": 16,
+    "recommendation": "替换为 Lucide PanelLeftClose 图标"
+  },
+  {
+    "id": "icon_expand",
+    "type": "unicode",
+    "value": "▶",
+    "size": 16,
+    "recommendation": "替换为 Lucide PanelLeftOpen 图标"
+  },
+  {
+    "id": "icon_copy",
+    "type": "unicode",
+    "value": "📋",
+    "size": 16,
+    "recommendation": "替换为 Lucide Copy 图标"
+  },
+  {
+    "id": "icon_edit",
+    "type": "unicode",
+    "value": "✏",
+    "size": 16,
+    "recommendation": "替换为 Lucide Pencil 图标"
+  },
+  {
+    "id": "avatar_placeholder",
+    "type": "unicode",
+    "value": "👤",
+    "size": 32,
+    "recommendation": "替换为用户实际头像或默认头像图片"
+  },
+  {
+    "id": "logo_placeholder",
+    "type": "text",
+    "value": "戏境",
+    "fontSize": 24,
+    "fontWeight": 700,
+    "color": "#7C5CFC",
+    "recommendation": "替换为品牌Logo图片"
+  }
+]

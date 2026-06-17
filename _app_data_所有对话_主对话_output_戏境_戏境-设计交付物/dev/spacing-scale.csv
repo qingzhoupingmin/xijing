@@ -1,0 +1,9 @@
+token_name,value,usage
+spacing-xs,4px,紧凑间距/图标间距/标签内边距
+spacing-sm,8px,小间距/表单项间距
+spacing-md,12px,中等间距/标签与输入框间距
+spacing-base,16px,基准间距/卡片间距/组件间距
+spacing-lg,24px,大间距/内容区内边距/卡片内边距
+spacing-xl,32px,特大间距/页面标题与内容间距
+spacing-2xl,48px,超大连距/阅读区内边距(垂直)
+spacing-3xl,64px,最大间距/分隔区域

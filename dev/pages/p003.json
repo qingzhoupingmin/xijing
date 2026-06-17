@@ -1,0 +1,109 @@
+{
+  "page_id": "p003",
+  "page_name": "个人中心",
+  "route": "/settings/profile",
+  "layout": {
+    "type": "side-nav",
+    "topbar": {
+      "height": 56,
+      "background": "#FFFFFF",
+      "border": "1px #E5E7EB"
+    },
+    "sidebar": {
+      "width": 220,
+      "background": "#FFFFFF",
+      "border": "1px #E5E7EB"
+    },
+    "content": {
+      "background": "#F9FAFB",
+      "padding": 24,
+      "maxWidth": null
+    }
+  },
+  "regions": [
+    {
+      "id": "sidebar",
+      "name": "侧边栏",
+      "layout": {
+        "direction": "column",
+        "align": "stretch",
+        "gap": 4,
+        "padding": 16
+      },
+      "components": [
+        { "id": "logo", "type": "Text", "props": { "children": "戏境", "fontSize": 24, "fontWeight": 700, "color": "#7C5CFC" } },
+        { "id": "nav-story", "type": "NavItem", "props": { "icon": "icon_story", "label": "我的故事" } },
+        { "id": "nav-api", "type": "NavItem", "props": { "icon": "icon_settings", "label": "API配置" } },
+        { "id": "nav-profile", "type": "NavItem", "props": { "icon": "icon_user", "label": "个人中心", "active": true } }
+      ]
+    },
+    {
+      "id": "topbar",
+      "name": "顶栏",
+      "layout": {
+        "direction": "row",
+        "align": "center",
+        "justify": "space-between",
+        "padding": "0 24px"
+      },
+      "components": [
+        { "id": "page-title", "type": "Text", "props": { "children": "个人中心", "fontSize": 24, "fontWeight": 600, "color": "#1F2937" } }
+      ]
+    },
+    {
+      "id": "content",
+      "name": "表单内容",
+      "layout": {
+        "direction": "column",
+        "gap": 24,
+        "padding": 0
+      },
+      "components": [
+        { "id": "profile-card", "type": "Card", "props": { "children": "ProfileFormGroup" } },
+        { "id": "password-card", "type": "Card", "props": { "children": "PasswordFormGroup" } }
+      ]
+    }
+  ],
+  "components": [
+    { "type": "Sidebar", "spec": "参考 components-schema.json" },
+    { "type": "TopBar", "spec": "参考 components-schema.json" },
+    { "type": "NavItem", "spec": "参考 components-schema.json" },
+    { "type": "Card", "spec": "参考 components-schema.json" },
+    { "type": "Input", "spec": "参考 components-schema.json" },
+    { "type": "Button", "spec": "参考 components-schema.json" },
+    { "type": "Divider", "spec": "参考 components-schema.json" }
+  ],
+  "states": ["normal"],
+  "navigation": {
+    "entry_from": [
+      { "page_id": "p001", "label": "侧边栏菜单" }
+    ],
+    "links_to": [
+      { "page_id": "p001", "label": "我的故事", "trigger": "侧边栏菜单" },
+      { "page_id": "p002", "label": "API配置", "trigger": "侧边栏菜单" }
+    ]
+  },
+  "api_data": {
+    "profile": {
+      "nickname": "string",
+      "email": "string (只读)",
+      "avatar": "string (URL)"
+    }
+  },
+  "form_groups": {
+    "profile": {
+      "title": "个人信息",
+      "fields": [
+        { "name": "nickname", "type": "Input", "label": "昵称", "maxLength": 20 }
+      ]
+    },
+    "password": {
+      "title": "修改密码",
+      "fields": [
+        { "name": "currentPassword", "type": "Input", "label": "当前密码", "type": "password" },
+        { "name": "newPassword", "type": "Input", "label": "新密码", "type": "password" },
+        { "name": "confirmPassword", "type": "Input", "label": "确认密码", "type": "password" }
+      ]
+    }
+  }
+}

@@ -1,0 +1,659 @@
+{
+  "Button": {
+    "description": "按钮组件，支持多种变体和尺寸",
+    "props": {
+      "variant": {
+        "type": "string",
+        "values": ["primary", "secondary", "text", "danger", "gold", "gradient"],
+        "default": "primary",
+        "required": false
+      },
+      "size": {
+        "type": "string",
+        "values": ["sm", "md", "lg"],
+        "default": "md",
+        "required": false
+      },
+      "disabled": {
+        "type": "boolean",
+        "default": false,
+        "required": false
+      },
+      "loading": {
+        "type": "boolean",
+        "default": false,
+        "required": false
+      },
+      "children": {
+        "type": "ReactNode",
+        "required": true
+      },
+      "onClick": {
+        "type": "function",
+        "required": false
+      }
+    },
+    "token_refs": {
+      "background": "--color-primary",
+      "color": "--color-neutral-0",
+      "borderRadius": "--radius-md",
+      "fontSize": "--font-size-body-sm",
+      "fontWeight": "--font-weight-medium",
+      "shadow": "--shadow-primary-glow",
+      "height_sm": "28px",
+      "height_md": "36px",
+      "height_lg": "44px"
+    },
+    "specs": {
+      "sm": { "height": 28, "padding": "8px 12px", "fontSize": 12, "radius": 4 },
+      "md": { "height": 36, "padding": "12px 16px", "fontSize": 14, "radius": 8 },
+      "lg": { "height": 44, "padding": "16px 24px", "fontSize": 16, "radius": 8 }
+    }
+  },
+  "Input": {
+    "description": "输入框组件，支持单行文本和密码输入",
+    "props": {
+      "type": {
+        "type": "string",
+        "values": ["text", "password", "email", "number"],
+        "default": "text",
+        "required": false
+      },
+      "placeholder": {
+        "type": "string",
+        "required": false
+      },
+      "value": {
+        "type": "string",
+        "required": false
+      },
+      "disabled": {
+        "type": "boolean",
+        "default": false,
+        "required": false
+      },
+      "error": {
+        "type": "string",
+        "required": false
+      },
+      "onChange": {
+        "type": "function",
+        "required": false
+      }
+    },
+    "token_refs": {
+      "background": "--color-surface-input",
+      "border": "--color-neutral-3",
+      "borderFocus": "--color-primary",
+      "color": "--color-neutral-8",
+      "placeholderColor": "--color-neutral-5",
+      "fontSize": "--font-size-body-sm",
+      "borderRadius": "--radius-md",
+      "height": "36px",
+      "focusShadow": "--shadow-primary-glow"
+    },
+    "specs": {
+      "height": 36,
+      "padding": "0 12px",
+      "fontSize": 14,
+      "radius": 8
+    }
+  },
+  "Textarea": {
+    "description": "多行文本输入框",
+    "props": {
+      "rows": {
+        "type": "number",
+        "default": 3,
+        "required": false
+      },
+      "placeholder": {
+        "type": "string",
+        "required": false
+      },
+      "value": {
+        "type": "string",
+        "required": false
+      },
+      "maxLength": {
+        "type": "number",
+        "required": false
+      },
+      "onChange": {
+        "type": "function",
+        "required": false
+      }
+    },
+    "token_refs": {
+      "background": "--color-surface-input",
+      "border": "--color-neutral-3",
+      "borderFocus": "--color-primary",
+      "color": "--color-neutral-8",
+      "placeholderColor": "--color-neutral-5",
+      "fontSize": "--font-size-body-sm",
+      "borderRadius": "--radius-md",
+      "lineHeight": "--line-height"
+    },
+    "specs": {
+      "padding": "12px",
+      "fontSize": 14,
+      "radius": 8,
+      "lineHeight": 1.6
+    }
+  },
+  "Card": {
+    "description": "卡片组件，用于承载信息或操作",
+    "props": {
+      "variant": {
+        "type": "string",
+        "values": ["default", "story", "form", "config"],
+        "default": "default",
+        "required": false
+      },
+      "padding": {
+        "type": "string",
+        "values": ["sm", "md", "lg"],
+        "default": "md",
+        "required": false
+      },
+      "children": {
+        "type": "ReactNode",
+        "required": true
+      },
+      "onClick": {
+        "type": "function",
+        "required": false
+      }
+    },
+    "token_refs": {
+      "background": "--color-surface-card",
+      "border": "--color-neutral-2",
+      "borderRadius": "--radius-lg",
+      "shadow": "--shadow-sm",
+      "shadowHover": "--shadow-md",
+      "accentBorder": "linear-gradient(90deg, --color-primary 0%, --color-secondary 100%)"
+    },
+    "specs": {
+      "padding_sm": 16,
+      "padding_md": 20,
+      "padding_lg": 24,
+      "radius": 12,
+      "accentHeight": 2
+    }
+  },
+  "Switch": {
+    "description": "开关组件，用于启用/禁用状态切换",
+    "props": {
+      "checked": {
+        "type": "boolean",
+        "required": true
+      },
+      "disabled": {
+        "type": "boolean",
+        "default": false,
+        "required": false
+      },
+      "onChange": {
+        "type": "function",
+        "required": true
+      }
+    },
+    "token_refs": {
+      "enabledBg": "--color-success",
+      "disabledBg": "--color-neutral-3",
+      "thumbColor": "--color-neutral-0"
+    },
+    "specs": {
+      "width": 44,
+      "height": 24,
+      "radius": 12,
+      "thumbSize": 20
+    }
+  },
+  "Select": {
+    "description": "下拉选择器组件",
+    "props": {
+      "options": {
+        "type": "array",
+        "required": true
+      },
+      "value": {
+        "type": "string",
+        "required": false
+      },
+      "placeholder": {
+        "type": "string",
+        "required": false
+      },
+      "disabled": {
+        "type": "boolean",
+        "default": false,
+        "required": false
+      },
+      "onChange": {
+        "type": "function",
+        "required": true
+      }
+    },
+    "token_refs": {
+      "background": "--color-surface-input",
+      "border": "--color-neutral-3",
+      "borderFocus": "--color-primary",
+      "color": "--color-neutral-8",
+      "selectedBg": "--color-primary-surface",
+      "selectedColor": "--color-primary",
+      "borderRadius": "--radius-md",
+      "fontSize": "--font-size-body-sm"
+    },
+    "specs": {
+      "height": 36,
+      "width": 200,
+      "padding": "0 12px",
+      "fontSize": 14,
+      "radius": 8
+    }
+  },
+  "NavItem": {
+    "description": "侧边栏导航项组件",
+    "props": {
+      "icon": {
+        "type": "ReactNode",
+        "required": false
+      },
+      "label": {
+        "type": "string",
+        "required": true
+      },
+      "active": {
+        "type": "boolean",
+        "default": false,
+        "required": false
+      },
+      "onClick": {
+        "type": "function",
+        "required": false
+      }
+    },
+    "token_refs": {
+      "background": "--color-neutral-0",
+      "backgroundActive": "--color-primary-surface",
+      "color": "--color-neutral-7",
+      "colorActive": "--color-primary",
+      "borderActive": "--color-primary",
+      "iconColor": "--color-neutral-5",
+      "iconColorActive": "--color-primary",
+      "borderRadius": "--radius-md"
+    },
+    "specs": {
+      "height": 44,
+      "padding": "12px 16px",
+      "fontSize": 14,
+      "radius": 8,
+      "activeBorderWidth": 3
+    }
+  },
+  "TabItem": {
+    "description": "标签页项组件",
+    "props": {
+      "label": {
+        "type": "string",
+        "required": true
+      },
+      "active": {
+        "type": "boolean",
+        "default": false,
+        "required": false
+      },
+      "onClick": {
+        "type": "function",
+        "required": false
+      }
+    },
+    "token_refs": {
+      "color": "--color-neutral-6",
+      "colorActive": "--color-primary",
+      "underlineColor": "--color-primary",
+      "fontSize": "--font-size-body-sm",
+      "fontWeight": "--font-weight-medium"
+    },
+    "specs": {
+      "height": 40,
+      "fontSize": 14,
+      "underlineWidth": 2
+    }
+  },
+  "StepNav": {
+    "description": "步骤导航组件，用于多步骤表单",
+    "props": {
+      "steps": {
+        "type": "array",
+        "required": true
+      },
+      "currentStep": {
+        "type": "number",
+        "required": true
+      }
+    },
+    "token_refs": {
+      "doneColor": "--color-primary",
+      "currentColor": "--color-primary",
+      "pendingColor": "--color-neutral-3",
+      "lineColor": "--color-neutral-3",
+      "lineColorDone": "--color-primary",
+      "textColor": "--color-neutral-5",
+      "textColorActive": "--color-neutral-8",
+      "textColorDone": "--color-primary"
+    },
+    "specs": {
+      "circleSize": 28,
+      "lineHeight": 1,
+      "fontSize": 14,
+      "gap": 64
+    }
+  },
+  "StoryCard": {
+    "description": "故事卡片组件，展示故事概要信息",
+    "props": {
+      "title": {
+        "type": "string",
+        "required": true
+      },
+      "status": {
+        "type": "string",
+        "values": ["in_progress", "completed"],
+        "required": true
+      },
+      "progress": {
+        "type": "string",
+        "required": false
+      },
+      "model": {
+        "type": "string",
+        "required": false
+      },
+      "updatedAt": {
+        "type": "string",
+        "required": false
+      },
+      "onContinue": {
+        "type": "function",
+        "required": false
+      },
+      "onDelete": {
+        "type": "function",
+        "required": false
+      }
+    },
+    "token_refs": {
+      "background": "--color-surface-card",
+      "border": "--color-neutral-2",
+      "accentGradient": "linear-gradient(90deg, --color-primary 0%, --color-secondary 100%)",
+      "titleColor": "--color-neutral-8",
+      "progressColor": "--color-neutral-6",
+      "tagProgressBg": "--color-primary-surface",
+      "tagProgressColor": "--color-primary",
+      "tagDoneBg": "--color-secondary-surface",
+      "tagDoneColor": "--color-secondary-dark"
+    },
+    "specs": {
+      "padding": 24,
+      "radius": 12,
+      "accentHeight": 2,
+      "titleSize": 20,
+      "tagSize": 12
+    }
+  },
+  "ReadingCard": {
+    "description": "阅读卡片组件，用于展示章节内容",
+    "props": {
+      "title": {
+        "type": "string",
+        "required": false
+      },
+      "content": {
+        "type": "string",
+        "required": true
+      },
+      "maxWidth": {
+        "type": "number",
+        "default": 720,
+        "required": false
+      }
+    },
+    "token_refs": {
+      "background": "--color-surface-card",
+      "borderRadius": "--radius-lg",
+      "shadow": "--shadow-sm",
+      "titleColor": "--color-neutral-8",
+      "titleSize": "--font-size-h2",
+      "contentColor": "--color-neutral-7",
+      "contentSize": "--font-size-body",
+      "lineHeight": 1.8
+    },
+    "specs": {
+      "paddingVertical": 48,
+      "paddingHorizontal": 32,
+      "radius": 12,
+      "maxWidth": 720
+    }
+  },
+  "DecisionPanel": {
+    "description": "决策输入区组件，用于用户选择剧情走向",
+    "props": {
+      "situation": {
+        "type": "string",
+        "required": true
+      },
+      "placeholder": {
+        "type": "string",
+        "default": "请描述你的选择...",
+        "required": false
+      },
+      "onSubmit": {
+        "type": "function",
+        "required": true
+      },
+      "submitting": {
+        "type": "boolean",
+        "default": false,
+        "required": false
+      }
+    },
+    "token_refs": {
+      "background": "--color-surface-card",
+      "accentGradient": "linear-gradient(90deg, --color-primary 0%, --color-secondary 100%)",
+      "situationColor": "--color-secondary",
+      "textareaBg": "--color-surface-input",
+      "textareaBorder": "--color-neutral-3",
+      "buttonBg": "--color-secondary",
+      "buttonColor": "--color-neutral-0"
+    },
+    "specs": {
+      "padding": 24,
+      "radius": 12,
+      "accentHeight": 2,
+      "situationSize": 14,
+      "textareaRows": 3
+    }
+  },
+  "ChapterList": {
+    "description": "章节目录组件，用于章节回看页面",
+    "props": {
+      "chapters": {
+        "type": "array",
+        "required": true
+      },
+      "activeChapter": {
+        "type": "string",
+        "required": false
+      },
+      "onChapterClick": {
+        "type": "function",
+        "required": true
+      }
+    },
+    "token_refs": {
+      "background": "--color-surface-sidebar",
+      "border": "--color-neutral-3",
+      "titleColor": "--color-neutral-6",
+      "itemColor": "--color-neutral-6",
+      "itemColorActive": "--color-primary",
+      "itemBgActive": "--color-primary-surface",
+      "borderActive": "--color-primary"
+    },
+    "specs": {
+      "width": 220,
+      "titleSize": 14,
+      "itemHeight": 44,
+      "itemPadding": "16px 20px",
+      "itemSize": 14,
+      "activeBorderWidth": 3
+    }
+  },
+  "Dialog": {
+    "description": "弹窗组件，用于模态对话框",
+    "props": {
+      "open": {
+        "type": "boolean",
+        "required": true
+      },
+      "title": {
+        "type": "string",
+        "required": false
+      },
+      "children": {
+        "type": "ReactNode",
+        "required": true
+      },
+      "footer": {
+        "type": "ReactNode",
+        "required": false
+      },
+      "onClose": {
+        "type": "function",
+        "required": true
+      }
+    },
+    "token_refs": {
+      "overlay": "--color-surface-overlay",
+      "background": "--color-surface-card",
+      "borderRadius": "--radius-xl",
+      "shadow": "--shadow-xl",
+      "titleColor": "--color-neutral-8",
+      "titleSize": "--font-size-h4",
+      "titleWeight": "--font-weight-semibold",
+      "dividerColor": "--color-neutral-2"
+    },
+    "specs": {
+      "width": 560,
+      "padding": 24,
+      "radius": 16,
+      "titleSize": 18
+    }
+  },
+  "Tag": {
+    "description": "标签组件，用于状态展示",
+    "props": {
+      "variant": {
+        "type": "string",
+        "values": ["progress", "done", "abandoned"],
+        "default": "progress",
+        "required": false
+      },
+      "children": {
+        "type": "ReactNode",
+        "required": true
+      }
+    },
+    "token_refs": {
+      "progressBg": "--color-primary-surface",
+      "progressColor": "--color-primary",
+      "doneBg": "--color-secondary-surface",
+      "doneColor": "--color-secondary-dark",
+      "abandonedBg": "--color-neutral-1",
+      "abandonedColor": "--color-neutral-5"
+    },
+    "specs": {
+      "padding": "2px 8px",
+      "radius": 4,
+      "fontSize": 12
+    }
+  },
+  "TopBar": {
+    "description": "顶栏组件",
+    "props": {
+      "title": {
+        "type": "string",
+        "required": false
+      },
+      "breadcrumb": {
+        "type": "array",
+        "required": false
+      },
+      "left": {
+        "type": "ReactNode",
+        "required": false
+      },
+      "right": {
+        "type": "ReactNode",
+        "required": false
+      }
+    },
+    "token_refs": {
+      "background": "--color-surface-topbar",
+      "border": "--color-neutral-3",
+      "titleColor": "--color-neutral-8",
+      "breadcrumbColor": "--color-neutral-6"
+    },
+    "specs": {
+      "height": 56,
+      "padding": "0 24px",
+      "borderWidth": 1
+    }
+  },
+  "Sidebar": {
+    "description": "侧边栏组件",
+    "props": {
+      "collapsed": {
+        "type": "boolean",
+        "default": false,
+        "required": false
+      },
+      "logo": {
+        "type": "ReactNode",
+        "required": false
+      },
+      "children": {
+        "type": "ReactNode",
+        "required": true
+      }
+    },
+    "token_refs": {
+      "background": "--color-surface-sidebar",
+      "border": "--color-neutral-3",
+      "logoColor": "--color-primary"
+    },
+    "specs": {
+      "width": 220,
+      "collapsedWidth": 64,
+      "logoHeight": 64,
+      "borderWidth": 1
+    }
+  },
+  "GeneratingProgress": {
+    "description": "生成进度条组件，用于流式输出时显示",
+    "props": {
+      "progress": {
+        "type": "number",
+        "required": true
+      }
+    },
+    "token_refs": {
+      "gradient": "linear-gradient(90deg, --color-primary 0%, --color-secondary 100%)"
+    },
+    "specs": {
+      "height": 3,
+      "width": 720
+    }
+  }
+}

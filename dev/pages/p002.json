@@ -1,0 +1,116 @@
+{
+  "page_id": "p002",
+  "page_name": "API配置",
+  "route": "/settings/api",
+  "layout": {
+    "type": "side-nav",
+    "topbar": {
+      "height": 56,
+      "background": "#FFFFFF",
+      "border": "1px #E5E7EB"
+    },
+    "sidebar": {
+      "width": 220,
+      "background": "#FFFFFF",
+      "border": "1px #E5E7EB"
+    },
+    "content": {
+      "background": "#F9FAFB",
+      "padding": 24,
+      "maxWidth": null
+    }
+  },
+  "regions": [
+    {
+      "id": "sidebar",
+      "name": "侧边栏",
+      "layout": {
+        "direction": "column",
+        "align": "stretch",
+        "gap": 4,
+        "padding": 16
+      },
+      "components": [
+        { "id": "logo", "type": "Text", "props": { "children": "戏境", "fontSize": 24, "fontWeight": 700, "color": "#7C5CFC" } },
+        { "id": "nav-story", "type": "NavItem", "props": { "icon": "icon_story", "label": "我的故事" } },
+        { "id": "nav-api", "type": "NavItem", "props": { "icon": "icon_settings", "label": "API配置", "active": true } },
+        { "id": "nav-profile", "type": "NavItem", "props": { "icon": "icon_user", "label": "个人中心" } }
+      ]
+    },
+    {
+      "id": "topbar",
+      "name": "顶栏",
+      "layout": {
+        "direction": "row",
+        "align": "center",
+        "justify": "space-between",
+        "padding": "0 24px"
+      },
+      "components": [
+        { "id": "page-title", "type": "Text", "props": { "children": "API配置", "fontSize": 24, "fontWeight": 600, "color": "#1F2937" } }
+      ]
+    },
+    {
+      "id": "content",
+      "name": "配置列表",
+      "layout": {
+        "direction": "column",
+        "gap": 16,
+        "padding": 0
+      },
+      "components": [
+        { "id": "config-cards", "type": "Card[]", "props": { "variant": "config", "repeat": true } },
+        { "id": "add-section", "type": "Card", "props": { "variant": "dashed", "children": "+ 添加新配置" } }
+      ]
+    }
+  ],
+  "components": [
+    { "type": "Sidebar", "spec": "参考 components-schema.json" },
+    { "type": "TopBar", "spec": "参考 components-schema.json" },
+    { "type": "NavItem", "spec": "参考 components-schema.json" },
+    { "type": "Card", "spec": "参考 components-schema.json" },
+    { "type": "Switch", "spec": "参考 components-schema.json" },
+    { "type": "Button", "spec": "参考 components-schema.json" },
+    { "type": "Dialog", "spec": "参考 components-schema.json" },
+    { "type": "Input", "spec": "参考 components-schema.json" },
+    { "type": "Select", "spec": "参考 components-schema.json" }
+  ],
+  "states": ["normal", "dialog-open"],
+  "navigation": {
+    "entry_from": [
+      { "page_id": "p001", "label": "API配置菜单" },
+      { "page_id": "p003", "label": "个人中心返回" }
+    ],
+    "links_to": [
+      { "page_id": "p001", "label": "我的故事", "trigger": "侧边栏菜单" }
+    ]
+  },
+  "api_data": {
+    "configs": [
+      {
+        "id": "string",
+        "provider": "string (文心一言|通义千问|智谱|豆包|DeepSeek|自定义)",
+        "apiKey": "string (加密显示)",
+        "endpoint": "string",
+        "modelId": "string",
+        "enabled": "boolean"
+      }
+    ]
+  },
+  "dialogs": {
+    "addConfig": {
+      "width": 560,
+      "fields": [
+        { "name": "provider", "type": "Select", "label": "厂商", "required": true },
+        { "name": "endpoint", "type": "Input", "label": "接口地址", "required": true },
+        { "name": "apiKey", "type": "Input", "type": "password", "label": "API Key", "required": true },
+        { "name": "modelId", "type": "Select", "label": "模型ID", "required": true }
+      ],
+      "actions": [
+        { "label": "取消", "variant": "secondary" },
+        { "label": "测试连接", "variant": "primary" },
+        { "label": "保存", "variant": "primary" }
+      ]
+    }
+  }
+}
