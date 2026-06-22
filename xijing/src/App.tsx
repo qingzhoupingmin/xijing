@@ -1,6 +1,8 @@
 import Button from './components/Button'
 import Input from './components/Input'
 import Textarea from './components/Textarea'
+import Tag from './components/Tag' 
+
 
 function App() {
   return (
@@ -97,8 +99,63 @@ function App() {
           <Textarea label="故事前提" placeholder="用一句话概括你的故事..." rows={3} />
           <Textarea label="世界设定" placeholder="描述你的世界观..." rows={5} />
           <Textarea placeholder="纯文本区域（无标签）" />
+          <Input label="测试错误" error="这是错误提示" />
+          <Textarea label="没有error" placeholder="对比上面的Input" />
         </div>
       </section>
+    
+
+{/* === 实验 9：Tag 测试 === */}
+      <section>
+      <h2>9. Tag 标签测试</h2>
+      <div style={{ display: 'flex', gap: 8, alignItems: 'center', flexWrap: 'wrap' }}>
+    <Tag variant="progress">进行中</Tag>
+    <Tag variant="done">已完成</Tag>
+    <Tag variant="abandoned">已弃坑</Tag>
+    <Tag>默认值（progress）</Tag>
+    <Tag variant="info">消息</Tag>
+    <Tag variant="warning">警告</Tag>
+    <Tag variant="success">成功</Tag>
+  </div>
+
+  <div style={{ display: 'flex', gap: 16, marginTop: 16, alignItems: 'center' }}>
+    <span style={{ fontSize: 14, color: '#6B7280' }}>状态：</span>
+    <Tag variant="progress">3/12 章</Tag>
+    <Tag variant="done">已完成</Tag>
+  </div>
+
+  {/* 结合 Button 的模拟场景 */}
+  <div style={{ display: 'flex', gap: 8, alignItems: 'center', marginTop: 16 }}>
+    <Tag variant="done">武侠</Tag>
+    <Tag variant="progress">连载中</Tag>
+    <span style={{ fontSize: 14, color: '#374151' }}>天涯明月刀</span>
+  </div>
+  {/* 不同尺寸的标签 */}
+<div style={{ display: 'flex', gap: 8, alignItems: 'center', marginTop: 16 }}>
+  <Tag size="sm" variant="progress">小进度</Tag>
+  <Tag size="md" variant="progress">中进度</Tag>
+  <Tag size="lg" variant="progress">大进度</Tag>
+</div>
+
+<div style={{ display: 'flex', gap: 8, alignItems: 'center', marginTop: 8 }}>
+  <Tag size="sm" variant="info">小</Tag>
+  <Tag size="md" variant="info">中</Tag>
+  <Tag size="lg" variant="info">大</Tag>
+</div>
+<div style={{ display: 'flex', gap: 8, alignItems: 'center', marginTop: 16 }}>
+  <Tag variant="progress" bordered>带边框</Tag>
+  <Tag variant="done" bordered>金色边框</Tag>
+  <Tag variant="info" bordered size="lg">大号带边框</Tag>
+  <Tag variant="warning" bordered size="sm">小号警告边框</Tag>
+</div>
+
+{/* 对比：同样的标签不带边框 */}
+<div style={{ display: 'flex', gap: 8, alignItems: 'center', marginTop: 8 }}>
+  <Tag variant="progress">无边框</Tag>
+  <Tag variant="done">无边框</Tag>
+  <Tag variant="info" size="lg">大号无边框</Tag>
+</div>
+</section>
 
     </div>
   )
